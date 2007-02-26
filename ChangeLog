@@ -1,0 +1,58 @@
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.ac:
+	Bump version to 0.0.4
+
+	* xdg-user-dirs-update.c:
+	* xdg-user-dir-lookup.c:
+	support absolute filenames as user dirs
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* translate.c (strings):
+	Add Projects
+	
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.ac:
+	Bump version to 0.0.3
+
+	* xdg-user-dir-lookup.c:
+	Relicense as MIT
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.ac:
+	Bump version to 0.0.2
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am:
+	* xdg-user-dir
+	Added xdg-user-dir shellscript
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* translate.c:
+	Add more possible strings to use
+	Add non-capitalized version of strings
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* user-dirs.conf:
+	Add comments and filename_encoding
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* user-dirs.defaults:
+	Photos->Pictures
+	Add videos
+
+2007-02-23  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dirs-update.c:
+	Add support for specifying filename encoding
+	
+	
+	
+

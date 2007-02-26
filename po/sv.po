@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2007 Red Hat, Inc
+# This file is distributed under the same license as the PACKAGE package.
+# Alexander Larsson <alexl@redhat.com>, 2007
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xdg-user-dirs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-02-23 15:27+0100\n"
+"PO-Revision-Date: 2007-02-23 15:28+0100\n"
+"Last-Translator: Alexander Larsson <alexl@redhat.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: translate.c:2
+msgid "Desktop"
+msgstr "Skrivbord"
+
+#: translate.c:2
+msgid "desktop"
+msgstr "skrivbord"
+
+#: translate.c:3
+msgid "Documents"
+msgstr "Dokument"
+
+#: translate.c:3
+msgid "documents"
+msgstr "dokument"
+
+#: translate.c:4
+msgid "Download"
+msgstr "Hämtat"
+
+#: translate.c:4
+msgid "download"
+msgstr "hämtat"
+
+#: translate.c:5
+msgid "Movies"
+msgstr "Filmer"
+
+#: translate.c:5
+msgid "movies"
+msgstr "filmer"
+
+#: translate.c:6
+msgid "Music"
+msgstr "Musik"
+
+#: translate.c:6
+msgid "music"
+msgstr "musik"
+
+#: translate.c:7
+msgid "Photos"
+msgstr "Foton"
+
+#: translate.c:7
+msgid "photos"
+msgstr "foton"
+
+#: translate.c:8
+msgid "Pictures"
+msgstr "Bilder"
+
+#: translate.c:8
+msgid "pictures"
+msgstr "bilder"
+
+#: translate.c:9
+msgid "Projects"
+msgstr "Projekt"
+
+#: translate.c:9
+msgid "projects"
+msgstr "projekt"
+
+#: translate.c:10
+msgid "Public"
+msgstr "Delat"
+
+#: translate.c:10
+msgid "public"
+msgstr "delat"
+
+#: translate.c:11
+msgid "Share"
+msgstr "Delat"
+
+#: translate.c:11
+msgid "share"
+msgstr "delat"
+
+#: translate.c:12
+msgid "Templates"
+msgstr "Mallar"
+
+#: translate.c:12
+msgid "templates"
+msgstr "mallar"
+
+#: translate.c:13
+msgid "Videos"
+msgstr "Video"
+
+#: translate.c:13
+msgid "videos"
+msgstr "video"
