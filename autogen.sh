@@ -6,7 +6,7 @@ test -z "$srcdir" && srcdir=.
 
 ORIGDIR=`pwd`
 cd $srcdir
-PROJECT=xdg-user-dir
+PROJECT=xdg-user-dirs
 TEST_TYPE=-f
 FILE=user-dirs.conf
 
