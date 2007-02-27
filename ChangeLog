@@ -1,3 +1,8 @@
+2007-02-27  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am:
+	Remove ACLOCAL_AMFLAGS
+
 2007-02-26  Alexander Larsson  <alexl@redhat.com>
 
 	* translate.c:

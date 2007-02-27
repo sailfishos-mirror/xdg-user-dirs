@@ -32,5 +32,3 @@ noinst_PROGRAMS= \
 
 xdg_user_dir_lookup_SOURCES = \
 	xdg-user-dir-lookup.c
-
-ACLOCAL_AMFLAGS = -I m4
