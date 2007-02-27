@@ -1,4 +1,5 @@
 const char *strings[] = {
+  _("Applications"), _("applications"),	 
   _("Desktop"), _("desktop"),	 
   _("Documents"), _("documents"),
   _("Download"), _("download"), 

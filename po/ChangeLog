@@ -1,12 +1,14 @@
-2007-02-20  gettextize  <bug-gnu-gettext@gnu.org>
+2007-02-27  Alexander Larsson  <alexl@redhat.com>
 
-	* Makefile.in.in: New file, from gettext-0.14.6.
-	* boldquot.sed: New file, from gettext-0.14.6.
-	* en@boldquot.header: New file, from gettext-0.14.6.
-	* en@quot.header: New file, from gettext-0.14.6.
-	* insert-header.sin: New file, from gettext-0.14.6.
-	* quot.sed: New file, from gettext-0.14.6.
-	* remove-potcdate.sin: New file, from gettext-0.14.6.
-	* Rules-quot: New file, from gettext-0.14.6.
-	* POTFILES.in: New file.
+	* LINGUAS:
+	* ar.po:
+	* fr.po:
+	* hu.po:
+	* mk.po:
+	* pa.po:
+	* sv.po:
+	* xdg-user-dirs.pot:
+	Added some new translations
+
+	
 
