@@ -19,13 +19,15 @@ libraries =
 
 bin_PROGRAMS =					\
 	xdg-user-dirs-update			\
+	$(NULL)
+
+bin_SCRIPTS =					\
 	xdg-user-dir				\
 	$(NULL)
 
 xdg_user_dirs_update_SOURCES = xdg-user-dirs-update.c
 xdg_user_dirs_update_LDADD = $(libraries)
 
-xdg_user_dir_SOURCES = xdg-user-dir
 
 noinst_PROGRAMS= \
 	xdg-user-dir-lookup

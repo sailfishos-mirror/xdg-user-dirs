@@ -666,7 +666,6 @@ save_locale (void)
 {
   FILE *file;
   char *user_locale_file;
-  int i;
   char *locale, *dot;
 
   user_locale_file = get_user_config_file ("user-dirs.locale");
@@ -801,7 +800,7 @@ find_dir (Directory *dirs, const char *name)
 static void
 create_dirs (int force)
 {
-  int i, j;
+  int i;
   Directory dir;
   Directory *user_dir, *default_dir, *compat_dir;
   char *path_name, *relative_path_name, *translated_name;
