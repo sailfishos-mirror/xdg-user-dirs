@@ -34,6 +34,7 @@ static int user_dirs_changed = 0;
 
 static int enabled = 1;
 static char *filename_encoding = NULL; /* NULL => utf8 */
+static char *dummy_file = NULL;
 
 static iconv_t filename_converter = (iconv_t)(-1);
 
@@ -659,6 +660,34 @@ load_user_dirs (void)
 }
 
 static void
+save_locale (void)
+{
+  FILE *file;
+  char *user_locale_file;
+  int i;
+  char *locale, *dot;
+
+  user_locale_file = get_user_config_file ("user-dirs.locale");
+  file = fopen (user_locale_file, "w");
+  free (user_locale_file);
+  
+  if (file == NULL)
+    {
+      fprintf (stderr, "Can't save user-dirs.locale\n");
+      return;
+    }
+
+  locale = strdup (setlocale (LC_MESSAGES, NULL));
+  /* Skip encoding part */
+  dot = strchr (locale, '.');
+  if (dot)
+    *dot = 0;
+  fprintf (file, "%s", locale);
+  free (locale);
+  fclose (file);
+}
+
+static int
 save_user_dirs (void)
 {
   FILE *file;
@@ -666,7 +695,10 @@ save_user_dirs (void)
   int i;
   char *escaped;
 
-  user_config_file = get_user_config_file ("user-dirs.dirs");
+  if (dummy_file)
+    user_config_file = strdup (dummy_file);
+  else
+    user_config_file = get_user_config_file ("user-dirs.dirs");
   
   file = fopen (user_config_file, "w");
   free (user_config_file);
@@ -674,7 +706,7 @@ save_user_dirs (void)
   if (file == NULL)
     {
       fprintf (stderr, "Can't save user-dirs.dirs\n");
-      return;
+      return 0;
     }
 
   fprintf (file, "# This file is written by xdg-user-dirs-update\n");
@@ -696,6 +728,7 @@ save_user_dirs (void)
     }
 
   fclose (file);
+  return 1;
 }
 
 
@@ -830,7 +863,9 @@ create_dirs (int force)
 	      
       if (user_dir == NULL || strcmp (relative_path_name, user_dir->path) != 0)
 	{
-	  if (!mkdir_all (path_name))
+	  /* Don't make the directories if we're writing a dummy output file */
+	  if (dummy_file == NULL &&
+	      !mkdir_all (path_name))
 	    {
 	      fprintf (stderr, "Can't create dir %s\n", path_name);
 	    }
@@ -864,6 +899,7 @@ main (int argc, char *argv[])
 {
   int force;
   int i;
+  int was_empty;
   
   setlocale (LC_ALL, "");
   
@@ -888,17 +924,37 @@ main (int argc, char *argv[])
   load_default_dirs ();
   load_user_dirs ();
 
+  was_empty = (user_dirs == NULL) || (user_dirs->name == NULL);
+
   force = 0;
   for (i = 1; i < argc; i++)
     {
-      if (strcmp (argv[i], "--force") == 0)
+      if (strcmp (argv[i], "--help") == 0)
+	{
+	  printf ("Usage: xdg-user-dirs-update [--force] [--dummy-output <path>]\n");
+	  exit (0);
+	}
+      else if (strcmp (argv[i], "--force") == 0)
 	force = 1;
+      else if (strcmp (argv[i], "--dummy-output") == 0 && i + 1 < argc)
+	dummy_file = argv[++i];
+      else
+	{
+	  printf ("Unknown argument %s\n", argv[i]);
+	  exit (1);
+	}
     }
   
   create_dirs (force);
 
   if (user_dirs_changed)
-    save_user_dirs ();
+    {
+      if (!save_user_dirs ())
+	return 1;
+
+      if ((force || was_empty) && dummy_file == NULL)
+	save_locale ();
+    }
   
   return 0;
 }
