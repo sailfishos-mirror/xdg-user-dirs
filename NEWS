@@ -1,0 +1,6 @@
+Major changes in 0.1 are:
+* Add "Applications" to translations
+* Support --dummy-output to write config file elsewhere on update
+* Support --set to set a directory for the user
+* Save the locale used on initial run and forced update
+  This can be used to track changes in locale
