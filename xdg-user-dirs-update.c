@@ -34,6 +34,8 @@ static int user_dirs_changed = 0;
 
 static int enabled = 1;
 static char *filename_encoding = NULL; /* NULL => utf8 */
+
+/* Args */
 static char *dummy_file = NULL;
 
 static iconv_t filename_converter = (iconv_t)(-1);
@@ -783,6 +785,19 @@ lookup_backwards_compat (Directory *dir)
   return NULL;
 }
 
+static Directory *
+find_dir (Directory *dirs, const char *name)
+{
+  int i;
+  
+  for (i = 0; dirs[i].name != NULL; i++)
+    {
+      if (strcmp (dirs[i].name, name) == 0)
+	return &dirs[i];
+    }
+  return NULL;
+}
+
 static void
 create_dirs (int force)
 {
@@ -799,16 +814,7 @@ create_dirs (int force)
       default_dir = &default_dirs[i];
       user_dir = NULL;
       if (user_dirs)
-	{
-	  for (j = 0; user_dirs[j].name != NULL; j++)
-	    {
-	      if (strcmp (user_dirs[j].name, default_dir->name) == 0)
-		{
-		  user_dir = &user_dirs[j];
-		  break;
-		}
-	    }
-	}
+	user_dir = find_dir (user_dirs, default_dir->name);
 
       if (user_dir && !force)
 	{
@@ -900,6 +906,8 @@ main (int argc, char *argv[])
   int force;
   int i;
   int was_empty;
+  char *set_dir = NULL;
+  char *set_value = NULL;
   
   setlocale (LC_ALL, "");
   
@@ -907,10 +915,37 @@ main (int argc, char *argv[])
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 
-  load_all_configs ();
-  if (!enabled)
-    return 0;
+  force = 0;
+  for (i = 1; i < argc; i++)
+    {
+      if (strcmp (argv[i], "--help") == 0)
+	{
+	  printf ("Usage: xdg-user-dirs-update [--force] [--dummy-output <path>] [--set DIR path]\n");
+	  exit (0);
+	}
+      else if (strcmp (argv[i], "--force") == 0)
+	force = 1;
+      else if (strcmp (argv[i], "--dummy-output") == 0 && i + 1 < argc)
+	dummy_file = argv[++i];
+      else if (strcmp (argv[i], "--set") == 0 && i + 2 < argc)
+	{
+	  set_dir = argv[++i];
+	  set_value = argv[++i];
 
+	  if (*set_value != '/')
+	    {
+	      printf ("directory value must be absolute path (was %s)\n", set_value);
+	      exit (1);
+	    }
+	}
+      else
+	{
+	  printf ("Invalid argument %s\n", argv[i]);
+	  exit (1);
+	}
+    }
+  
+  load_all_configs ();
   if (filename_encoding)
     {
       filename_converter = iconv_open (filename_encoding, "UTF-8");
@@ -920,41 +955,66 @@ main (int argc, char *argv[])
 	  return 1;
 	}
     }
-  
-  load_default_dirs ();
-  load_user_dirs ();
 
-  was_empty = (user_dirs == NULL) || (user_dirs->name == NULL);
-
-  force = 0;
-  for (i = 1; i < argc; i++)
+  if (set_dir != NULL)
     {
-      if (strcmp (argv[i], "--help") == 0)
+      Directory *dir;
+      char *path, *home;
+      /* Set a key */
+
+      load_user_dirs ();
+
+      home = get_home_dir ();
+
+      path = set_value;
+      if (has_prefix (path, home))
 	{
-	  printf ("Usage: xdg-user-dirs-update [--force] [--dummy-output <path>]\n");
-	  exit (0);
+	  path += strlen (home);
+	  while (*path == '/')
+	    path++;
 	}
-      else if (strcmp (argv[i], "--force") == 0)
-	force = 1;
-      else if (strcmp (argv[i], "--dummy-output") == 0 && i + 1 < argc)
-	dummy_file = argv[++i];
+      
+      dir = find_dir (user_dirs, set_dir);
+      if (dir != NULL)
+	{
+	  free (dir->path);
+	  dir->path = strdup (path);
+	}
       else
 	{
-	  printf ("Unknown argument %s\n", argv[i]);
-	  exit (1);
-	}
-    }
-  
-  create_dirs (force);
+	  Directory new_dir;
 
-  if (user_dirs_changed)
-    {
+	  new_dir.name = strdup (set_dir);
+	  new_dir.path = strdup (path);
+	  
+	  user_dirs = add_directory (user_dirs, &new_dir);
+	}
       if (!save_user_dirs ())
 	return 1;
-
-      if ((force || was_empty) && dummy_file == NULL)
-	save_locale ();
     }
-  
+  else
+    {
+      
+      /* default: update */
+      if (!enabled)
+	return 0;
+      
+      load_default_dirs ();
+      load_user_dirs ();
+      
+      was_empty = (user_dirs == NULL) || (user_dirs->name == NULL);
+      
+      create_dirs (force);
+      
+      if (user_dirs_changed)
+	{
+	  if (!save_user_dirs ())
+	    return 1;
+	  
+	  if ((force || was_empty) && dummy_file == NULL)
+	    save_locale ();
+	}
+
+    }
   return 0;
 }
