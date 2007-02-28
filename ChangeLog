@@ -1,5 +1,10 @@
 2007-02-28  Alexander Larsson  <alexl@redhat.com>
 
+	* README:
+	Add reference to web page
+
+2007-02-28  Alexander Larsson  <alexl@redhat.com>
+
 	* xdg-user-dirs-update.c:
 	Add support for setting a directory (--set)
 	
