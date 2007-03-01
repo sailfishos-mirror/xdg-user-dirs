@@ -698,14 +698,34 @@ save_user_dirs (void)
   char *escaped;
   int tmp_fd;
   int res;
+  char *dir, *slash;
+  struct stat stat_buf;
 
   res = 1;
 
+  tmp_file = NULL;
   if (dummy_file)
     user_config_file = strdup (dummy_file);
   else
     user_config_file = get_user_config_file ("user-dirs.dirs");
 
+  dir = strdup (user_config_file);
+  slash = strrchr (dir, '/');
+  if (slash)
+    *slash = 0;
+  
+  if (stat (dir, &stat_buf) == -1 && errno == ENOENT)
+    {
+      if (mkdir (dir, 0755) == -1)
+	{
+	  free (dir);
+	  fprintf (stderr, "Can't save user-dirs.dirs, failed to create directory\n");
+	  res = 0;
+	  goto out;
+	}
+    }
+  free (dir);
+  
   tmp_file = malloc (strlen (user_config_file) + 6 + 1);
   strcpy (tmp_file, user_config_file);
   strcat (tmp_file, "XXXXXX");
@@ -755,7 +775,8 @@ save_user_dirs (void)
     }
 
  out:
-  free (tmp_file);
+  if (tmp_file)
+    free (tmp_file);
   free (user_config_file);
   return res;
 }
