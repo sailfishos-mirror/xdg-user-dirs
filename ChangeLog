@@ -1,3 +1,8 @@
+2007-03-01  Alexander Larsson  <alexl@redhat.com>
+
+	* autogen.sh:
+	Require automake 1.9
+
 === xdg-user-dirs 0.2 ===
 
 2007-03-01  Alexander Larsson  <alexl@redhat.com>
