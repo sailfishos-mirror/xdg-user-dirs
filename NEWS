@@ -1,3 +1,7 @@
+Major changes in 0.2 are:
+* Build fixes
+* Update user-dirs.dirs atomically
+
 Major changes in 0.1 are:
 * Add "Applications" to translations
 * Support --dummy-output to write config file elsewhere on update
