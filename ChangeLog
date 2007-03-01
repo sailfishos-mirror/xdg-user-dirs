@@ -1,5 +1,10 @@
 2007-03-01  Alexander Larsson  <alexl@redhat.com>
 
+	* configure.ac:
+	Add AM_PROG_MKDIR_P	
+
+2007-03-01  Alexander Larsson  <alexl@redhat.com>
+
 	* AUTHORS:
 	Add myself
 
