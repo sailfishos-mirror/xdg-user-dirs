@@ -10,7 +10,7 @@ INCLUDES =					\
 	$(NULL)
 
 EXTRA_DIST= config.rpath translate.c autogen.sh \
-	user-dirs.conf user-dirs.defaults
+	user-dirs.conf user-dirs.defaults xdg-user-dir
 
 xdgdir=$(sysconfdir)/xdg
 xdg_DATA=user-dirs.conf user-dirs.defaults

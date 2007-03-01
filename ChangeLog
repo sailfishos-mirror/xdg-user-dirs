@@ -1,5 +1,8 @@
 2007-03-01  Alexander Larsson  <alexl@redhat.com>
 
+	* Makefile.am:
+	Add xdg-user-dir to EXTRA_DIST
+
 	* configure.ac:
 	Bump to 0.2
 
