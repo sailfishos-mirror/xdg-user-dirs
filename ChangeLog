@@ -1,3 +1,9 @@
+2007-03-01  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dirs-update.c (save_user_dirs):
+	Use atomic rename-over-target when saving
+	user-dirs.dirs.
+
 2007-02-28  Alexander Larsson  <alexl@redhat.com>
 
 	* Makefile.am:

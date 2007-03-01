@@ -693,21 +693,38 @@ save_user_dirs (void)
 {
   FILE *file;
   char *user_config_file;
+  char *tmp_file;
   int i;
   char *escaped;
+  int tmp_fd;
+  int res;
+
+  res = 1;
 
   if (dummy_file)
     user_config_file = strdup (dummy_file);
   else
     user_config_file = get_user_config_file ("user-dirs.dirs");
+
+  tmp_file = malloc (strlen (user_config_file) + 6 + 1);
+  strcpy (tmp_file, user_config_file);
+  strcat (tmp_file, "XXXXXX");
   
-  file = fopen (user_config_file, "w");
-  free (user_config_file);
-  
-  if (file == NULL)
+  tmp_fd = mkstemp (tmp_file);
+  if (tmp_fd == -1)
     {
       fprintf (stderr, "Can't save user-dirs.dirs\n");
-      return 0;
+      res = 0;
+      goto out;
+    }
+  
+  file = fdopen (tmp_fd, "w");
+  if (file == NULL)
+    {
+      unlink (tmp_file);
+      fprintf (stderr, "Can't save user-dirs.dirs\n");
+      res = 0;
+      goto out;
     }
 
   fprintf (file, "# This file is written by xdg-user-dirs-update\n");
@@ -729,7 +746,18 @@ save_user_dirs (void)
     }
 
   fclose (file);
-  return 1;
+
+  if (rename (tmp_file, user_config_file) == -1)
+    {
+      unlink (tmp_file);
+      fprintf (stderr, "Can't save user-dirs.dirs\n");
+      res = 0;
+    }
+
+ out:
+  free (tmp_file);
+  free (user_config_file);
+  return res;
 }
 
 
