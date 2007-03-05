@@ -1,3 +1,11 @@
+2007-03-05  Alexander Larsson  <alexl@redhat.com>
+
+	* ca.po:
+	New translation
+	
+	* LINGUAS:
+	Added da.po and ca.po
+
 2007-03-02  Alexander Larsson  <alexl@redhat.com>
 
 	* da.po:
