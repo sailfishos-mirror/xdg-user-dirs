@@ -1,3 +1,7 @@
+Major changes in 0.4 are:
+* More translations
+* Build fix when using external libintl
+
 Major changes in 0.3 are:
 * create ~/.config dir if needed
 
