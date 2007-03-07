@@ -15,7 +15,7 @@ EXTRA_DIST= config.rpath translate.c autogen.sh \
 xdgdir=$(sysconfdir)/xdg
 xdg_DATA=user-dirs.conf user-dirs.defaults
 
-libraries =
+libraries = $(LIBINTL)
 
 bin_PROGRAMS =					\
 	xdg-user-dirs-update			\

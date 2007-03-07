@@ -1,3 +1,10 @@
+2007-03-07  Alexander Larsson  <alexl@redhat.com>
+
+	* Makefile.am (libraries):
+	Add LIBINTL to libraries (reported by Daniel Macks)
+
+=== xdg-user-dirs 0.3 ===
+
 2007-03-01  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.ac:
