@@ -247,7 +247,7 @@ filename_from_utf8 (const char *utf8_path)
       outp = out;
   
       res = iconv (filename_converter,
-		   (char **)&in, &in_left,
+		   (ICONV_CONST char **)&in, &in_left,
 		   &outp, &out_left);
       if (res == (size_t)(-1) &&  errno == E2BIG)
 	{

@@ -1,3 +1,9 @@
+2007-03-08  Alexander Larsson  <alexl@redhat.com>
+
+	* configure.ac: 
+	* xdg-user-dirs-update.c:
+	Get the right declaration of iconv to avoid warnings.
+
 === xdg-user-dirs 0.4 ===
 
 2007-03-07  Alexander Larsson  <alexl@redhat.com>
