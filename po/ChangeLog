@@ -1,6 +1,12 @@
 2007-03-13  Alexander Larsson  <alexl@redhat.com>
 
 	* LINGUAS:
+	* es.po:
+	New translation
+	
+2007-03-13  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
 	* fi.po:
 	* pl.po:
 	New translations
