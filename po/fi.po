@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-03-01 17:05+0100\n"
-"PO-Revision-Date: 2007-03-12 20:49+0200\n"
+"PO-Revision-Date: 2007-03-14 12:33+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: translate.c:2
 msgid "Applications"
-msgstr "Sovellusohjelmat"
+msgstr "Sovellukset"
 
 #: translate.c:2
 msgid "applications"
-msgstr "sovellusohjelmat"
+msgstr "sovellukset"
 
 #: translate.c:3
 msgid "Desktop"
@@ -35,19 +35,19 @@ msgstr "työpöytä"
 
 #: translate.c:4
 msgid "Documents"
-msgstr "Dokumentit"
+msgstr "Asiakirjat"
 
 #: translate.c:4
 msgid "documents"
-msgstr "dokumentit"
+msgstr "asiakirjat"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Ladatut"
+msgstr "Lataukset"
 
 #: translate.c:5
 msgid "download"
-msgstr "ladatut"
+msgstr "lataukset"
 
 #: translate.c:6
 msgid "Movies"
@@ -91,19 +91,19 @@ msgstr "projektit"
 
 #: translate.c:11
 msgid "Public"
-msgstr "Julkiset"
+msgstr "Julkinen"
 
 #: translate.c:11
 msgid "public"
-msgstr "julkiset"
+msgstr "julkinen"
 
 #: translate.c:12
 msgid "Share"
-msgstr "Jaetut"
+msgstr "Jaettu"
 
 #: translate.c:12
 msgid "share"
-msgstr "jaetut"
+msgstr "jaettu"
 
 #: translate.c:13
 msgid "Templates"
