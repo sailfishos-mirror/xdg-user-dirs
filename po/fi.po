@@ -120,4 +120,3 @@ msgstr "Videot"
 #: translate.c:14
 msgid "videos"
 msgstr "videot"
-

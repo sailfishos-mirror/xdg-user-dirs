@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-12 23:20+0200\n"
+"POT-Creation-Date: 2007-03-01 17:05+0100\n"
 "PO-Revision-Date: 2007-03-12 23:21+0200\n"
 "Last-Translator: Priit Laes <plaes@plaes.org>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -118,4 +118,3 @@ msgstr "Videod"
 #: translate.c:14
 msgid "videos"
 msgstr "videod"
-
