@@ -1,3 +1,10 @@
+Major changes in 0.6 are:
+* More translations
+* Fixed buggy printouts on --force
+* Make xdg-user-dir-lookup.c #include:able
+* Add xdg_user_dir_lookup_with_fallback to xdg-user-dir-lookup.c
+* Add docs to xdg-user-dir-lookup.c
+
 Major changes in 0.5 are:
 * More translations
 
