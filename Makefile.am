@@ -5,8 +5,9 @@ SUBDIRS=po
 INCLUDES =					\
 	-I$(top_srcdir)				\
 	-I$(top_builddir)			\
-	-DXDGCONFDIR=\"$(sysconfdir)/xdg\"		\
+	-DXDGCONFDIR=\"$(sysconfdir)/xdg\"	\
 	-DLOCALEDIR=\"$(datadir)/locale\" 	\
+	-DSTANDALONE_XDG_USER_DIR_LOOKUP	\
 	$(NULL)
 
 EXTRA_DIST= config.rpath translate.c autogen.sh \

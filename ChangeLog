@@ -1,5 +1,12 @@
 2007-04-11  Alexander Larsson  <alexl@redhat.com>
 
+	* Makefile.am (INCLUDES): 
+	* xdg-user-dir-lookup.c:
+	Allow xdg-user-dir-lookup.c to be included without modifications
+	Define STANDALONE_XDG_USER_DIR_LOOKUP to include main
+
+2007-04-11  Alexander Larsson  <alexl@redhat.com>
+
 	* xdg-user-dirs-update.c (create_dirs):
 	Print out correct directory on --force
 
