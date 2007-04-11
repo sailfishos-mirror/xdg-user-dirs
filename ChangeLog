@@ -1,5 +1,11 @@
 2007-04-11  Alexander Larsson  <alexl@redhat.com>
 
+	* xdg-user-dir-lookup.c:
+	Add xdg_user_dir_lookup_with_fallback
+	Add doc strings
+	
+2007-04-11  Alexander Larsson  <alexl@redhat.com>
+
 	* Makefile.am (INCLUDES): 
 	* xdg-user-dir-lookup.c:
 	Allow xdg-user-dir-lookup.c to be included without modifications

@@ -29,9 +29,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+/**
+ * xdg_user_dir_lookup_with_fallback:
+ * @type: a string specifying the type of directory
+ * @fallback: value to use if the directory isn't specified by the user
+ * @returns: a newly allocated absolute pathname
+ *
+ * Looks up a XDG user directory of the specified type.
+ * Example of types are "DESKTOP" and "DOWNLOAD".
+ *
+ * In case the user hasn't specified any directory for the specified
+ * type the value returned is @fallback.
+ *
+ * The return value is newly allocated and must be freed with
+ * free(). The return value is never NULL if @fallback != NULL.
+ **/
 static char *
-xdg_user_dir_lookup (const char *type)
+xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
 {
   FILE *file;
   char *home_dir, *config_home, *config_file;
@@ -44,7 +58,7 @@ xdg_user_dir_lookup (const char *type)
   home_dir = getenv ("HOME");
 
   if (home_dir == NULL)
-    return strdup ("/tmp");
+    goto error;
 
   config_home = getenv ("XDG_CONFIG_HOME");
   if (config_home == NULL || config_home[0] == 0)
@@ -137,6 +151,41 @@ xdg_user_dir_lookup (const char *type)
     return user_dir;
 
  error:
+  if (fallback)
+    return strdup (fallback);
+  return NULL;
+}
+
+/**
+ * xdg_user_dir_lookup:
+ * @type: a string specifying the type of directory
+ * @returns: a newly allocated absolute pathname
+ *
+ * Looks up a XDG user directory of the specified type.
+ * Example of types are "DESKTOP" and "DOWNLOAD".
+ *
+ * The return value is always != NULL, and if a directory
+ * for the type is not specified by the user the default
+ * is the home directory. Except for DESKTOP which defaults
+ * to ~/Desktop.
+ *
+ * The return value is newly allocated and must be freed with
+ * free().
+ **/
+static char *
+xdg_user_dir_lookup (const char *type)
+{
+  char *dir, *home_dir, *user_dir;
+	  
+  dir = xdg_user_dir_lookup_with_fallback (type, NULL);
+  if (dir != NULL)
+    return dir;
+  
+  home_dir = getenv ("HOME");
+  
+  if (home_dir == NULL)
+    return strdup ("/tmp");
+  
   /* Special case desktop for historical compatibility */
   if (strcmp (type, "DESKTOP") == 0)
     {
@@ -145,8 +194,8 @@ xdg_user_dir_lookup (const char *type)
       strcat (user_dir, "/Desktop");
       return user_dir;
     }
-  else
-    return strdup (home_dir);
+  
+  return strdup (home_dir);
 }
 
 #ifdef STANDALONE_XDG_USER_DIR_LOOKUP
