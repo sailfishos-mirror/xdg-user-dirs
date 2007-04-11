@@ -1,3 +1,8 @@
+2007-04-11  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dirs-update.c (create_dirs):
+	Print out correct directory on --force
+
 === xdg-user-dirs 0.5 ===
 
 2007-03-26  Alexander Larsson  <alexl@redhat.com>

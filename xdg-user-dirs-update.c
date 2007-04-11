@@ -935,8 +935,8 @@ create_dirs (int force)
 	      else
 		{
 		  /* We forced an update */
-		  fprintf (stdout, "Moving %s directory from %s/%s to %s\n",
-			   default_dir->name, get_home_dir (), default_dir->path, path_name);
+		  fprintf (stdout, "Moving %s directory from %s to %s\n",
+			   default_dir->name, user_dir->path, relative_path_name);
 		  free (user_dir->path);
 		  user_dir->path = strdup (relative_path_name);
 		}
