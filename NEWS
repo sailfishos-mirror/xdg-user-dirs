@@ -1,3 +1,6 @@
+Major changes in 0.7 are:
+* Don't recreate directories if removes/set to $HOME
+
 Major changes in 0.6 are:
 * More translations
 * Fixed buggy printouts on --force
