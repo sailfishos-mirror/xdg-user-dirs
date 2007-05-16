@@ -630,8 +630,14 @@ load_user_dirs (void)
 	continue;
 	
 
-      if (has_prefix (p, "$HOME/"))
-	p += 6;
+      if (has_prefix (p, "$HOME"))
+	{
+	  p += 5;
+	  if (*p == '/')
+	    p++;
+	  else if (*p != '"' && *p != 0)
+	    continue; /* Not ending after $HOME, nor followed by slash. Ignore */
+	}
       else if (*p != '/')
 	continue;
       value = p;
@@ -650,9 +656,10 @@ load_user_dirs (void)
       *key_end = 0;
       *value_end = 0;
 
-      if (*key == 0 || *value == 0)
+      if (*key == 0)
 	continue;
 
+      printf ("key: '%s', value: '%s'\n", key, value);
       dir.name = strdup (key);
       dir.path = shell_unescape (value);
       user_dirs = add_directory (user_dirs, &dir);
