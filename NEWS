@@ -1,3 +1,6 @@
+Major changes in 0.8 are:
+* Remove accidental debug spew leftovers
+
 Major changes in 0.7 are:
 * Don't recreate directories if removes/set to $HOME
 

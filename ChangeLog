@@ -1,5 +1,16 @@
 2007-05-16  Alexander Larsson  <alexl@redhat.com>
 
+	* xdg-user-dirs-update.c (load_user_dirs):
+	Remove debug spew
+	
+	* configure.ac: 
+	* NEWS:
+	Update for 0.8
+
+=== xdg-user-dirs 0.7 ===
+
+2007-05-16  Alexander Larsson  <alexl@redhat.com>
+
 	* NEWS: 
 	* configure.ac:
 	Update for 0.7

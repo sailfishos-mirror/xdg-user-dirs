@@ -659,7 +659,6 @@ load_user_dirs (void)
       if (*key == 0)
 	continue;
 
-      printf ("key: '%s', value: '%s'\n", key, value);
       dir.name = strdup (key);
       dir.path = shell_unescape (value);
       user_dirs = add_directory (user_dirs, &dir);
