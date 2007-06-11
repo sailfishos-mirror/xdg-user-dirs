@@ -760,15 +760,18 @@ save_user_dirs (void)
   fprintf (file, "# homedir-relative path, or XDG_xxx_DIR=\"/yyy\", where /yyy is an\n");
   fprintf (file, "# absolute path. No other format is supported.\n");
   fprintf (file, "# \n");
-  
-  for (i = 0; user_dirs[i].name != NULL; i++)
+
+  if (user_dirs)
     {
-      escaped = shell_escape (user_dirs[i].path);
-      fprintf (file, "XDG_%s_DIR=\"%s%s\"\n",
-	       user_dirs[i].name,
-	       (*escaped == '/')?"":"$HOME/",
-	       escaped);
-      free (escaped);
+      for (i = 0; user_dirs[i].name != NULL; i++)
+	{
+	  escaped = shell_escape (user_dirs[i].path);
+	  fprintf (file, "XDG_%s_DIR=\"%s%s\"\n",
+		   user_dirs[i].name,
+		   (*escaped == '/')?"":"$HOME/",
+		   escaped);
+	  free (escaped);
+	}
     }
 
   fclose (file);
@@ -870,8 +873,7 @@ create_dirs (int force)
     {
       default_dir = &default_dirs[i];
       user_dir = NULL;
-      if (user_dirs)
-	user_dir = find_dir (user_dirs, default_dir->name);
+      user_dir = find_dir (user_dirs, default_dir->name);
 
       if (user_dir && !force)
 	{

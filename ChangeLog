@@ -1,5 +1,10 @@
 2007-06-11  Alexander Larsson  <alexl@redhat.com>
 
+	* xdg-user-dirs-update.c: (save_user_dirs), (create_dirs):
+	More fixed for NULL dirs
+
+2007-06-11  Alexander Larsson  <alexl@redhat.com>
+
 	* xdg-user-dirs-update.c: (find_dir):
 	Handle dir being NULL.
 	Reported by Daniel Macks
