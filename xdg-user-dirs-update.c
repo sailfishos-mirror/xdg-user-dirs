@@ -843,6 +843,9 @@ static Directory *
 find_dir (Directory *dirs, const char *name)
 {
   int i;
+
+  if (dirs == NULL)
+    return NULL;
   
   for (i = 0; dirs[i].name != NULL; i++)
     {

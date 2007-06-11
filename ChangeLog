@@ -1,3 +1,9 @@
+2007-06-11  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dirs-update.c: (find_dir):
+	Handle dir being NULL.
+	Reported by Daniel Macks
+
 2007-05-16  Alexander Larsson  <alexl@redhat.com>
 
 	* xdg-user-dirs-update.c (load_user_dirs):
