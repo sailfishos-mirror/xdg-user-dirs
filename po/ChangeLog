@@ -1,5 +1,10 @@
 2007-06-11  Alexander Larsson  <alexl@redhat.com>
 
+	* mk.po:
+	Update
+
+2007-06-11  Alexander Larsson  <alexl@redhat.com>
+
 	* fr.po:
 	Fix Public translation (#11155)
 
