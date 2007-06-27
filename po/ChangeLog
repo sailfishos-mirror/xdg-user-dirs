@@ -1,3 +1,13 @@
+2007-06-27  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* eu.po:
+	* sk.po:
+	Added eu and sk
+	
+	* sv.po:
+	Updated (bug #11371)
+
 2007-06-11  Alexander Larsson  <alexl@redhat.com>
 
 	* mk.po:
