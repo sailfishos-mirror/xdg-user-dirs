@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-25 13:47+0200\n"
-"PO-Revision-Date: 2007-03-13 01:36+0200\n"
+"PO-Revision-Date: 2007-06-29 23:08+0200\n"
 "Last-Translator: Piotr Drąg <raven@pmail.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,11 +39,11 @@ msgstr "dokumenty"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Pobrane pliki"
+msgstr "Pobrane"
 
 #: translate.c:5
 msgid "download"
-msgstr "pobrane pliki"
+msgstr "pobrane"
 
 #: translate.c:6
 msgid "Movies"
@@ -63,11 +63,11 @@ msgstr "muzyka"
 
 #: translate.c:8
 msgid "Photos"
-msgstr "Fotografie"
+msgstr "Zdjęcia"
 
 #: translate.c:8
 msgid "photos"
-msgstr "fotografie"
+msgstr "zdjęcia"
 
 #: translate.c:9
 msgid "Pictures"
@@ -87,19 +87,19 @@ msgstr "projekty"
 
 #: translate.c:11
 msgid "Public"
-msgstr "Publiczne"
+msgstr "Publiczny"
 
 #: translate.c:11
 msgid "public"
-msgstr "publiczne"
+msgstr "publiczny"
 
 #: translate.c:12
 msgid "Share"
-msgstr "Współdzielone"
+msgstr "Współdzielony"
 
 #: translate.c:12
 msgid "share"
-msgstr "współdzielone"
+msgstr "współdzielony"
 
 #: translate.c:13
 msgid "Templates"
@@ -116,3 +116,4 @@ msgstr "Wideo"
 #: translate.c:14
 msgid "videos"
 msgstr "wideo"
+
