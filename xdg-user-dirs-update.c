@@ -1,5 +1,7 @@
 #include <config.h>
 
+#define _GNU_SOURCE
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <libintl.h>
@@ -327,51 +329,60 @@ freev (char **strs)
 }
 
 static char **
-get_config_files (char *filename)
+parse_colon_separated_dirs (const char *dirs)
 {
   int numfiles;
-  char *config_dirs;
-  char *path, *file;
   char **paths;
-  char *p, *colon;
+  const char *p;
 
   numfiles = 0;
   paths = malloc (sizeof (char *));
   paths[0] = NULL;
 
-  path = get_user_config_file (filename);
-  if (path)
-    {
-      if (is_regular_file (path))
-	{
-	  paths = realloc (paths, sizeof (char *) * (numfiles + 2));
-	  paths[numfiles++] = path;
-	  paths[numfiles] = NULL;
-	}
-      else
-	free (path);
-    }
-
-  config_dirs = getenv ("XDG_CONFIG_DIRS");
-  if (config_dirs)
-    config_dirs = strdup (config_dirs);
-  else
-    config_dirs = strdup (XDGCONFDIR);
-
-  p = config_dirs;
+  p = dirs;
   while (p != NULL && *p != 0)
     {
+      int len;
+      const char *path;
+      char *colon;
+
       path = p;
       colon = strchr (path, ':');
       if (colon)
 	{
-	  *colon = 0;
+	  len = colon - p;
 	  p = colon + 1;
 	}
       else
-	p = NULL;
+	{
+	  len = strlen (p);
+	  p = NULL;
+	}
 
-      file = concat_strings (path, "/", filename, NULL);
+      paths = realloc (paths, sizeof (char *) * (numfiles + 2));
+      paths[numfiles++] = strndup (path, len);
+      paths[numfiles] = NULL;
+    }
+
+  return paths;
+}
+
+static char **
+get_config_files (char *filename)
+{
+  int i;
+  int numfiles;
+  char *config_dirs;
+  char *file;
+  char **paths, **config_paths;
+
+  numfiles = 0;
+  paths = malloc (sizeof (char *));
+  paths[0] = NULL;
+
+  file = get_user_config_file (filename);
+  if (file)
+    {
       if (is_regular_file (file))
 	{
 	  paths = realloc (paths, sizeof (char *) * (numfiles + 2));
@@ -381,7 +392,28 @@ get_config_files (char *filename)
       else
 	free (file);
     }
+
+  config_dirs = getenv ("XDG_CONFIG_DIRS");
+  if (config_dirs)
+    config_paths = parse_colon_separated_dirs (config_dirs);
+  else
+    config_paths = parse_colon_separated_dirs (XDGCONFDIR);
+
+  for (i = 0; config_paths[i] != NULL; i++)
+    {
+      file = concat_strings (config_paths[i], "/", filename, NULL);
+      if (is_regular_file (file))
+	{
+	  paths = realloc (paths, sizeof (char *) * (numfiles + 2));
+	  paths[numfiles++] = file;
+	  paths[numfiles] = NULL;
+	}
+      else
+	free (file);
+      free (config_paths[i]);
+    }
   
+  free (config_paths);
   free (config_dirs);
 
   return paths;
@@ -967,10 +999,44 @@ main (int argc, char *argv[])
   int was_empty;
   char *set_dir = NULL;
   char *set_value = NULL;
+  char *locale_dir = NULL;
   
   setlocale (LC_ALL, "");
   
-  bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+  if (is_directory (LOCALEDIR))
+    locale_dir = strdup (LOCALEDIR);
+  else
+    {
+      /* In case LOCALEDIR does not exist, e.x. xdg-user-dirs is installed in
+       * a different location than the one determined at compile time, look
+       * through the XDG_DATA_DIRS environment variable for alternate locations
+       * of the locale files */
+      char *data_dirs = getenv ("XDG_DATA_DIRS");
+      if (data_dirs)
+	{
+	  char **data_paths;
+
+	  data_paths = parse_colon_separated_dirs (data_dirs);
+	  for (i = 0; data_paths[i] != NULL; i++)
+	    {
+	      if (!locale_dir)
+		{
+		  char *dir = NULL;
+		  dir = concat_strings (data_paths[i], "/", "locale", NULL);
+		  if (is_directory (dir))
+		    locale_dir = dir;
+		  else
+		    free (dir);
+		}
+	      free (data_paths[i]);
+	    }
+	  free (data_paths);
+	}
+    }
+
+  bindtextdomain (GETTEXT_PACKAGE, locale_dir);
+  free (locale_dir);
+
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 

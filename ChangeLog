@@ -1,3 +1,10 @@
+2007-07-26  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dirs-update.c:
+	Look for translations in XDG_DATA_DIRS if localedir doesn't exist.
+	This is useful for relocatable builds.
+	Patch from Lei Zhang <thestig@google.com>
+
 2007-06-11  Alexander Larsson  <alexl@redhat.com>
 
 	* xdg-user-dirs-update.c: (save_user_dirs), (create_dirs):
