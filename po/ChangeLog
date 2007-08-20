@@ -1,3 +1,18 @@
+2007-08-20  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* es.po:
+	* ja.po:
+	* ko.po:
+	* nb.po:
+	* nl.po:
+	* nn.po:
+	* pt_BR.po:
+	* ru.po:
+	* th.po:
+	* zh_CN.po:
+	New and updated translation
+
 2007-07-13  Alexander Larsson  <alexl@redhat.com>
 
 	* pl.po:
