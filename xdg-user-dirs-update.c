@@ -414,7 +414,6 @@ get_config_files (char *filename)
     }
   
   free (config_paths);
-  free (config_dirs);
 
   return paths;
 }
