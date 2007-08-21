@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-16 11:03+0200\n"
+"POT-Creation-Date: 2007-04-25 13:47+0200\n"
 "PO-Revision-Date: 2007-08-16 11:15+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -120,4 +120,3 @@ msgstr "Videoklipp"
 #: translate.c:14
 msgid "videos"
 msgstr "videoklipp"
-

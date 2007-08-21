@@ -6,6 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-25 13:47+0200\n"
 "PO-Revision-Date: 2007-06-29 14:24+0000\n"
 "Last-Translator: snowdream <yang_hui1986527@yahoo.com.cn>\n"
