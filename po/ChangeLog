@@ -1,3 +1,9 @@
+2007-08-28  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* uk.po:
+	Added ukranian translation
+
 2007-08-27  Alexander Larsson  <alexl@redhat.com>
 
 	* Update greek translation (#12146)
