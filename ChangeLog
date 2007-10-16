@@ -1,3 +1,9 @@
+2007-10-16  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dir-lookup.c:
+	Handle out of memory and compile with C++ compiler. (#12738)
+	Patch from Christian Persch 
+
 2007-08-21  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.ac:

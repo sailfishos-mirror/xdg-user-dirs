@@ -42,7 +42,8 @@
  * type the value returned is @fallback.
  *
  * The return value is newly allocated and must be freed with
- * free(). The return value is never NULL if @fallback != NULL.
+ * free(). The return value is never NULL if @fallback != NULL, unless
+ * out of memory.
  **/
 static char *
 xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
@@ -63,13 +64,19 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
   config_home = getenv ("XDG_CONFIG_HOME");
   if (config_home == NULL || config_home[0] == 0)
     {
-      config_file = malloc (strlen (home_dir) + strlen ("/.config/user-dirs.dirs") + 1);
+      config_file = (char*) malloc (strlen (home_dir) + strlen ("/.config/user-dirs.dirs") + 1);
+      if (config_file == NULL)
+        goto error;
+
       strcpy (config_file, home_dir);
       strcat (config_file, "/.config/user-dirs.dirs");
     }
   else
     {
-      config_file = malloc (strlen (config_home) + strlen ("/user-dirs.dirs") + 1);
+      config_file = (char*) malloc (strlen (config_home) + strlen ("/user-dirs.dirs") + 1);
+      if (config_file == NULL)
+        goto error;
+
       strcpy (config_file, config_home);
       strcat (config_file, "/user-dirs.dirs");
     }
@@ -126,13 +133,19 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
       
       if (relative)
 	{
-	  user_dir = malloc (strlen (home_dir) + 1 + strlen (p) + 1);
+	  user_dir = (char*) malloc (strlen (home_dir) + 1 + strlen (p) + 1);
+          if (user_dir == NULL)
+            goto error2;
+
 	  strcpy (user_dir, home_dir);
 	  strcat (user_dir, "/");
 	}
       else
 	{
-	  user_dir = malloc (strlen (p) + 1);
+	  user_dir = (char*) malloc (strlen (p) + 1);
+          if (user_dir == NULL)
+            goto error2;
+
 	  *user_dir = 0;
 	}
       
@@ -144,7 +157,8 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
 	  *d++ = *p++;
 	}
       *d = 0;
-    }  
+    }
+error2:
   fclose (file);
 
   if (user_dir)
@@ -164,7 +178,8 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
  * Looks up a XDG user directory of the specified type.
  * Example of types are "DESKTOP" and "DOWNLOAD".
  *
- * The return value is always != NULL, and if a directory
+ * The return value is always != NULL (unless out of memory),
+ * and if a directory
  * for the type is not specified by the user the default
  * is the home directory. Except for DESKTOP which defaults
  * to ~/Desktop.
@@ -189,7 +204,10 @@ xdg_user_dir_lookup (const char *type)
   /* Special case desktop for historical compatibility */
   if (strcmp (type, "DESKTOP") == 0)
     {
-      user_dir = malloc (strlen (home_dir) + strlen ("/Desktop") + 1);
+      user_dir = (char*) malloc (strlen (home_dir) + strlen ("/Desktop") + 1);
+      if (user_dir == NULL)
+        return NULL;
+
       strcpy (user_dir, home_dir);
       strcat (user_dir, "/Desktop");
       return user_dir;
