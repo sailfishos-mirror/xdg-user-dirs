@@ -1,3 +1,10 @@
+2007-10-22  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* be@latin.po:
+	* cs.po:
+	Add Belarusian and Czech translations
+
 2007-10-15  Alexander Larsson  <alexl@redhat.com>
 
 	* LINGUAS:
