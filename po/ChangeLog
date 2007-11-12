@@ -1,5 +1,11 @@
 2007-11-12  Alexander Larsson  <alexl@redhat.com>
 
+	* sk.po:
+	Fix translation.
+	Patch from palo.simo@post.sk
+
+2007-11-12  Alexander Larsson  <alexl@redhat.com>
+
 	* et.po:
 	Fix translation (#13062)
 	Patch from Priit Laes

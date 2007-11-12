@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-25 13:47+0200\n"
-"PO-Revision-Date: 2007-06-18 12:52+0200\n"
+"PO-Revision-Date: 2007-11-07 11:27+0100\n"
 "Last-Translator: Pavol Šimo <palo.simo@post.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -97,7 +97,7 @@ msgstr "verejné"
 
 #: translate.c:12
 msgid "Share"
-msgstr "Zdiaľané"
+msgstr "Zdieľané"
 
 #: translate.c:12
 msgid "share"
