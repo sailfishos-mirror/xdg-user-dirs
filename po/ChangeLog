@@ -1,3 +1,9 @@
+2008-01-03  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* ga.po:
+	Added gaelic translations.
+
 2007-11-12  Alexander Larsson  <alexl@redhat.com>
 
 	* sk.po:
