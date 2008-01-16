@@ -105,11 +105,11 @@ msgstr "paylaşım"
 
 #: translate.c:13
 msgid "Templates"
-msgstr "Geçici"
+msgstr "Şablonlar"
 
 #: translate.c:13
 msgid "templates"
-msgstr "geçici"
+msgstr "şablonlar"
 
 #: translate.c:14
 msgid "Videos"
