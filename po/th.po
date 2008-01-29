@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-25 13:47+0200\n"
-"PO-Revision-Date: 2007-07-17 12:00-0800\n"
-"Last-Translator: Google\n"
+"PO-Revision-Date: 2008-01-28 21:04+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,43 +16,43 @@ msgstr ""
 
 #: translate.c:2
 msgid "Applications"
-msgstr "แอปพลิเคชัน"
+msgstr "โปรแกรม"
 
 #: translate.c:2
 msgid "applications"
-msgstr "แอปพลิเคชัน"
+msgstr "โปรแกรม"
 
 #: translate.c:3
 msgid "Desktop"
-msgstr "เดสก์ท็อป "
+msgstr "เดสก์ท็อป"
 
 #: translate.c:3
 msgid "desktop"
-msgstr "เดสก์ท็อป "
+msgstr "เดสก์ท็อป"
 
 #: translate.c:4
 msgid "Documents"
-msgstr "เอกสาร "
+msgstr "เอกสาร"
 
 #: translate.c:4
 msgid "documents"
-msgstr "เอกสาร "
+msgstr "เอกสาร"
 
 #: translate.c:5
 msgid "Download"
-msgstr "ดาวน์โหลด "
+msgstr "ดาวน์โหลด"
 
 #: translate.c:5
 msgid "download"
-msgstr "ดาวน์โหลด "
+msgstr "ดาวน์โหลด"
 
 #: translate.c:6
 msgid "Movies"
-msgstr "ภาพยนตร์ "
+msgstr "ภาพยนตร์"
 
 #: translate.c:6
 msgid "movies"
-msgstr "ภาพยนตร์ "
+msgstr "ภาพยนตร์"
 
 #: translate.c:7
 msgid "Music"
@@ -64,11 +64,11 @@ msgstr "ดนตรี"
 
 #: translate.c:8
 msgid "Photos"
-msgstr "ดาวน์โหลด"
+msgstr "ภาพถ่าย"
 
 #: translate.c:8
 msgid "photos"
-msgstr "ดาวน์โหลด"
+msgstr "ภาพถ่าย"
 
 #: translate.c:9
 msgid "Pictures"
@@ -80,11 +80,11 @@ msgstr "รูปภาพ"
 
 #: translate.c:10
 msgid "Projects"
-msgstr "โครงการต่างๆ"
+msgstr "โครงงาน"
 
 #: translate.c:10
 msgid "projects"
-msgstr "โครงการต่างๆ"
+msgstr "โครงงาน"
 
 #: translate.c:11
 msgid "Public"
@@ -96,24 +96,24 @@ msgstr "สาธารณะ"
 
 #: translate.c:12
 msgid "Share"
-msgstr "ใช้งานร่วมกัน"
+msgstr "ใช้ร่วมกัน"
 
 #: translate.c:12
 msgid "share"
-msgstr "ใช้งานร่วมกัน"
+msgstr "ใช้ร่วมกัน"
 
 #: translate.c:13
 msgid "Templates"
-msgstr "เทมเพลท"
+msgstr "เทมเพลต"
 
 #: translate.c:13
 msgid "templates"
-msgstr "เทมเพลท"
+msgstr "เทมเพลต"
 
 #: translate.c:14
 msgid "Videos"
-msgstr "วิดีโอ"
+msgstr "วีดิทัศน์"
 
 #: translate.c:14
 msgid "videos"
-msgstr "วิดีโอ"
+msgstr "วีดิทัศน์"
