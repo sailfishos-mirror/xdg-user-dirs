@@ -1,3 +1,10 @@
+2008-02-19  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* he.po:
+	* kn.po:
+	Added he (#14553) and kn (#14565)
+
 === xdg-user-dirs 0.10 ===
 
 2008-01-29  Alexander Larsson  <alexl@redhat.com>
