@@ -1,3 +1,9 @@
+2008-03-14  Alexander Larsson  <alexl@redhat.com>
+
+	* LINGUAS:
+	* sq.po:
+	Added albanian translation from Laurent Dhima <laurenti@alblinux.net>
+
 2008-03-06  Alexander Larsson  <alexl@redhat.com>
 
 	* eu.po:
