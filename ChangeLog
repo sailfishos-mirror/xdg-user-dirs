@@ -1,3 +1,9 @@
+2008-10-24  Alexander Larsson  <alexl@redhat.com>
+
+	* xdg-user-dir:
+	Fix bashisms.
+	Patch from Lei Zhang <thestig@google.com>
+
 2008-02-12  Alexander Larsson  <alexl@redhat.com>
 
 	* configure.ac:
