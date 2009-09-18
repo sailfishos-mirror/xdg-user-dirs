@@ -3,6 +3,7 @@ const char *strings[] = {
   _("Desktop"), _("desktop"),	 
   _("Documents"), _("documents"),
   _("Download"), _("download"), 
+  _("Downloads"), _("downloads"), 
   _("Movies"), _("movies"),	 
   _("Music"), _("music"),	 
   _("Photos"), _("photos"),	 

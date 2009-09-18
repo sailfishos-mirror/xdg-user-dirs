@@ -1,3 +1,12 @@
+2009-09-18  Alexander Larsson  <alexl@redhat.com>
+
+	* translate.c:
+	Add "Downloads" and "downloads"
+
+	* user-dirs.defaults:
+	Switch DOWNLOAD to "Downloads" by default to match
+	the other names being in plural. (#23796)
+
 2008-10-24  Alexander Larsson  <alexl@redhat.com>
 
 	* xdg-user-dir:
