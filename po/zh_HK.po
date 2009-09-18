@@ -1,5 +1,5 @@
 # Chinese (Hong Kong) translation of xdg-user-dirs.
-# Copyright (C) 2007 Free Software Foundation, Inc.
+#
 # Abel Cheung <abelcheung@gmail.com>, 2007.
 #
 msgid ""

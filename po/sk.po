@@ -1,7 +1,7 @@
-# Slovak translation of xdg-user-dirs
-# This file is distributed under the same license as the xdg-user-dirs package.
+# Slovak translation of xdg-user-dirs.
 # Copyright (C) 2007 Red Hat, Inc 
-# Maintainer: Pavol Šimo <palo.simo@post.sk>, 2007
+# This file is distributed under the same license as the xdg-user-dirs package.
+# Pavol Šimo <palo.simo@post.sk>, 2007.
 #
 msgid ""
 msgstr ""

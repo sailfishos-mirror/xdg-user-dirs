@@ -1,4 +1,4 @@
-# translation of xdg-user-dirs.po to Macedonian
+# Translation of xdg-user-dirs to Macedonian.
 # Copyright (C) 2007 Red Hat, Inc
 # This file is distributed under the same license as the PACKAGE package.
 #

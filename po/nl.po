@@ -1,4 +1,4 @@
-# Dutch translation of xdg-user-dirs
+# Dutch translation of xdg-user-dirs.
 # Copyright (C) 2007 Red Hat, Inc
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Tino Meinen <a.t.meinen@chello.nl>, 2007.

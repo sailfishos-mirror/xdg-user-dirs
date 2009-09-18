@@ -1,5 +1,4 @@
-# translation of xdg-user-dirs.HEAD.po to Basque
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Translation of xdg-user-dirs to Basque.
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
@@ -7,117 +6,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-18 03:55+0000\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2008-02-18 17:17+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language-Team: Basque <translation-team-eu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../translate.c:2
+#: translate.c:2
 msgid "Applications"
 msgstr "Aplikazioak"
 
-#: ../translate.c:2
+#: translate.c:2
 msgid "applications"
 msgstr "aplikazioak"
 
-#: ../translate.c:3
+#: translate.c:3
 msgid "Desktop"
 msgstr "Mahaigaina"
 
-#: ../translate.c:3
+#: translate.c:3
 msgid "desktop"
 msgstr "mahaigaina"
 
-#: ../translate.c:4
+#: translate.c:4
 msgid "Documents"
 msgstr "Dokumentuak"
 
-#: ../translate.c:4
+#: translate.c:4
 msgid "documents"
 msgstr "dokumentuak"
 
-#: ../translate.c:5
+#: translate.c:5
 msgid "Download"
 msgstr "Deskargak"
 
-#: ../translate.c:5
+#: translate.c:5
 msgid "download"
 msgstr "deskargak"
 
-#: ../translate.c:6
+#: translate.c:6
 msgid "Movies"
 msgstr "Filmeak"
 
-#: ../translate.c:6
+#: translate.c:6
 msgid "movies"
 msgstr "filmeak"
 
-#: ../translate.c:7
+#: translate.c:7
 msgid "Music"
 msgstr "Musika"
 
-#: ../translate.c:7
+#: translate.c:7
 msgid "music"
 msgstr "musika"
 
-#: ../translate.c:8
+#: translate.c:8
 msgid "Photos"
 msgstr "Argazkiak"
 
-#: ../translate.c:8
+#: translate.c:8
 msgid "photos"
 msgstr "argazkiak"
 
-#: ../translate.c:9
+#: translate.c:9
 msgid "Pictures"
 msgstr "Irudiak"
 
-#: ../translate.c:9
+#: translate.c:9
 msgid "pictures"
 msgstr "irudiak"
 
-#: ../translate.c:10
+#: translate.c:10
 msgid "Projects"
 msgstr "Proiektuak"
 
-#: ../translate.c:10
+#: translate.c:10
 msgid "projects"
 msgstr "proiektuak"
 
-#: ../translate.c:11
+#: translate.c:11
 msgid "Public"
 msgstr "Publikoa"
 
-#: ../translate.c:11
+#: translate.c:11
 msgid "public"
 msgstr "publikoa"
 
-#: ../translate.c:12
+#: translate.c:12
 msgid "Share"
 msgstr "Partekatua"
 
-#: ../translate.c:12
+#: translate.c:12
 msgid "share"
 msgstr "partekatua"
 
-#: ../translate.c:13
+#: translate.c:13
 msgid "Templates"
 msgstr "Txantiloiak"
 
-#: ../translate.c:13
+#: translate.c:13
 msgid "templates"
 msgstr "txantiloiak"
 
-#: ../translate.c:14
+#: translate.c:14
 msgid "Videos"
 msgstr "Bideoak"
 
-#: ../translate.c:14
+#: translate.c:14
 msgid "videos"
 msgstr "bideoak"
-

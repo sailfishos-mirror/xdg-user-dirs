@@ -1,5 +1,4 @@
 # Italian translation for xdg-user-dirs
-# Copyright (C) 2007 Free Software Foundation, Inc
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Luca Ferretti <elle.uca@libero.it>, 2007.
 #

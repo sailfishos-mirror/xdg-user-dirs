@@ -1,7 +1,6 @@
-# Portuguese translation for xdg-user-dirs
-# Copyright © 2007 xdg-user-dirs
+# Portuguese translation for xdg-user-dirs.
 # This file is distributed under the same license as the xdg-user-dirs package.
-# Duarte Loreto <happyguy_pt@hotmail.com>
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2007.
 #
 msgid ""
 msgstr ""
@@ -10,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-03-06 23:25+0100\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
