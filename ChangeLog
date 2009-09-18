@@ -1,5 +1,11 @@
 2009-09-18  Alexander Larsson  <alexl@redhat.com>
 
+	* autogen.sh:
+	* configure.ac:
+	Switch to automake 1.11
+
+2009-09-18  Alexander Larsson  <alexl@redhat.com>
+
 	* translate.c:
 	Add "Downloads" and "downloads"
 
