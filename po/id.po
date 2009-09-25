@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.10\n"
+"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
-"PO-Revision-Date: 2008-07-20 19:52+0700\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
+"PO-Revision-Date: 2009-09-19 12:34-0400\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -48,73 +48,81 @@ msgid "download"
 msgstr "unduh"
 
 #: translate.c:6
+msgid "Downloads"
+msgstr "Unduhan"
+
+#: translate.c:6
+msgid "downloads"
+msgstr "unduhan"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Film"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "film"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Musik"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "musik"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Foto"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "foto"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Gambar"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "gambar"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Proyek"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "proyek"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Publik"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "publik"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Bagi"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "bagi"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Templat"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "templat"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Video"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "video"

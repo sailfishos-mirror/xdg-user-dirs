@@ -1,16 +1,15 @@
-# translation of xdg-user-dirs-0.10.po to Hungarian
 # Hungarian translation of xdg-user-dirs
-# Copyright (C) 2007, 2008 Free Software Foundation, Inc.
+# Copyright (C) 2007, 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xdg-user-dirs package.
 #
-# Gabor Kelemen <kelemeng@gnome.hu>, 2007.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2007, 2009.
 # Daniel Ugra <daniel.ugra@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs-0.10\n"
+"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
-"PO-Revision-Date: 2008-07-07 12:23+0200\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
+"PO-Revision-Date: 2009-09-19 11:28+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -52,73 +51,81 @@ msgid "download"
 msgstr "letöltések"
 
 #: translate.c:6
+msgid "Downloads"
+msgstr "Letöltések"
+
+#: translate.c:6
+msgid "downloads"
+msgstr "letöltések"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Filmek"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "filmek"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Zenék"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "zenék"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Fényképek"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "fényképek"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Képek"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "képek"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Projektek"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "projektek"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Nyilvános"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "nyilvános"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Megosztott"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "megosztott"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Sablonok"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "sablonok"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Videók"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "videók"

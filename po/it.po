@@ -1,17 +1,17 @@
 # Italian translation for xdg-user-dirs
 # This file is distributed under the same license as the xdg-user-dirs package.
-# Luca Ferretti <elle.uca@libero.it>, 2007.
+# Luca Ferretti <elle.uca@libero.it>, 2007, 2009.
 #
 # Questo commento è stato aggiunto per assicurare la codifica «UTF-8»
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs\n"
+"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
-"PO-Revision-Date: 2007-03-05 21:15+0100\n"
-"Last-Translator: Luca Ferretti <elle.uca@libero.it>\n"
-"Language-Team: Italian <tp@lists.linuz.it>\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
+"PO-Revision-Date: 2009-09-19 10:03+0200\n"
+"Last-Translator: Luca Ferretti <elle.uca@infinito.it>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,73 +49,81 @@ msgid "download"
 msgstr "scaricati"
 
 #: translate.c:6
+msgid "Downloads"
+msgstr "Scaricati"
+
+#: translate.c:6
+msgid "downloads"
+msgstr "scaricati"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Filmati"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "filmati"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Musica"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "musica"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Fotografie"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "fotografie"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Immagini"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "immagini"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Progetti"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "progetti"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Pubblici"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "pubblici"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Condivisi"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "condivisi"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Modelli"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "modelli"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Video"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "Video"
