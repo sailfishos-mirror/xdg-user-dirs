@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2008-02-18 17:17+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <translation-team-eu@lists.sourceforge.net>\n"
@@ -49,73 +49,83 @@ msgid "download"
 msgstr "deskargak"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "Deskargak"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "deskargak"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Filmeak"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "filmeak"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Musika"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "musika"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Argazkiak"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "argazkiak"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Irudiak"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "irudiak"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Proiektuak"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "proiektuak"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Publikoa"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "publikoa"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Partekatua"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "partekatua"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Txantiloiak"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "txantiloiak"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Bideoak"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "bideoak"

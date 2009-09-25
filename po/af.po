@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2007-06-01 12:00+0200\n"
 "Last-Translator: Friedel Wolff <friedel BY translate.org.za>\n"
 "Language-Team: Afrikaans <translate-discuss-af@lists.sourceforge.net>\n"
@@ -48,73 +48,83 @@ msgid "download"
 msgstr "afgelaai"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "Afgelaai"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "afgelaai"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Films"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "films"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Musiek"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "musiek"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Foto's"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "foto's"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Prente"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "prente"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Projekte"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "projekte"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Publiek"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "publiek"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Gedeel"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "gedeel"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Sjablone"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "sjablone"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Video's"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "video's"

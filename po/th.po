@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2008-01-28 21:04+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <translation-team-th@lists.sourceforge.net>\n"
@@ -48,73 +48,83 @@ msgid "download"
 msgstr "ดาวน์โหลด"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "ดาวน์โหลด"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "ดาวน์โหลด"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "ภาพยนตร์"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "ภาพยนตร์"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "ดนตรี"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "ดนตรี"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "ภาพถ่าย"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "ภาพถ่าย"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "รูปภาพ"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "รูปภาพ"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "โครงงาน"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "โครงงาน"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "สาธารณะ"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "สาธารณะ"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "ใช้ร่วมกัน"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "ใช้ร่วมกัน"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "เทมเพลต"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "เทมเพลต"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "วีดิทัศน์"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "วีดิทัศน์"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2007-02-28 03:27+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -47,73 +47,83 @@ msgid "download"
 msgstr "下載"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "下載"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "下載"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "電影"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "電影"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "音樂"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "音樂"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "相片"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "相片"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "圖片"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "圖片"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "專案"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "專案"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "公共"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "公共"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "分享目錄"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "分享目錄"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "模板"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "模板"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "影片"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "影片"

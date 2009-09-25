@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2007-03-14 12:33+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -50,73 +50,83 @@ msgid "download"
 msgstr "lataukset"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "Lataukset"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "lataukset"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Elokuvat"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "elokuvat"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Musiikki"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "musiikki"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Valokuvat"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "valokuvat"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Kuvat"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "kuvat"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Projektit"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "projektit"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Julkinen"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "julkinen"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Jaettu"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "jaettu"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Mallit"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "mallit"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Videot"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "videot"

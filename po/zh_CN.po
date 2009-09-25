@@ -6,10 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
 "PO-Revision-Date: 2007-06-29 14:24+0000\n"
 "Last-Translator: snowdream <yang_hui1986527@yahoo.com.cn>\n"
-"Language-Team: Chinese (simplified) <translation-team-zh-cn@lists.sourceforge.net>\n"
+"Language-Team: Chinese (simplified) <translation-team-zh-cn@lists."
+"sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,73 +48,83 @@ msgid "download"
 msgstr "下载"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "下载"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "下载"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "电影"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "电影"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "音乐"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "音乐"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "照片"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "照片"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "图片"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "图片"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "项目"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "项目"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "公共的"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "公共的"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "共享"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "共享"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "模板"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "模板"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "视频"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "视频"
