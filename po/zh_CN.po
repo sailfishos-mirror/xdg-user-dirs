@@ -1,14 +1,16 @@
 # Simplified Chinese translation for xdg-user-dirs.
-# Copyright (C) 2007 Rosetta Contributors and Canonical Ltd 2007
+# Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xdg-user-dirs package.
+# snowdream <yang_ui1986527@yahoo.com.cn>, 2007.
+# Aron Xu <happyaron.xu@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs\n"
+"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-18 14:16+0200\n"
-"PO-Revision-Date: 2007-06-29 14:24+0000\n"
-"Last-Translator: snowdream <yang_hui1986527@yahoo.com.cn>\n"
+"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"PO-Revision-Date: 2009-10-04 10:24+0800\n"
+"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
 "Language-Team: Chinese (simplified) <translation-team-zh-cn@lists."
 "sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -48,12 +50,10 @@ msgid "download"
 msgstr "下载"
 
 #: translate.c:6
-#, fuzzy
 msgid "Downloads"
 msgstr "下载"
 
 #: translate.c:6
-#, fuzzy
 msgid "downloads"
 msgstr "下载"
 
