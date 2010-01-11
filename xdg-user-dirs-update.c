@@ -936,8 +936,8 @@ create_dirs (int force)
 	      path_name = concat_strings (get_home_dir (), "/", compat_dir->path, NULL);
 	      if (!is_directory (path_name))
 		{
-		  path_name = NULL;
 		  free (path_name);
+		  path_name = NULL;
 		}
 	      else
 		relative_path_name = strdup (compat_dir->path);
