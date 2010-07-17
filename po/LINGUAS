@@ -1,11 +1,13 @@
 # please keep this list sorted alphabetically
 #
 af
+an
 ar
 ast
 be
 be@latin
 bg
+bn_IN
 ca
 crh
 cs
@@ -20,19 +22,23 @@ fi
 fr
 ga
 gl
+gu
 he
 hu
 id
 is
 it
 ja
+kk
 kn
 ko
 ku
 lt
 lv
 mk
+mr
 nb
+nds
 nl
 nn
 pa
@@ -40,6 +46,7 @@ pl
 ps
 pt
 pt_BR
+ro
 ru
 sk
 sl
@@ -47,6 +54,7 @@ sq
 sr
 sr@Latn
 sv
+ta
 th
 tr
 uk
