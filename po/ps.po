@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs-0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2008-07-01 14:04-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
@@ -49,83 +49,73 @@ msgid "download"
 msgstr "رالېښنې"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "رالېښنې"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "رالېښنې"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "فلمونه"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "فلمونه"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "ټنګټکور"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "ټنګټکور"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "انځورونه"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "انځورونه"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "انځورونه"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "انځورونه"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "پروژې"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "پروژې"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "خپور"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "خپور"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "ونډول"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "خپور"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "کوندې"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "کوندې"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "ليديزې"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "ليديزې"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-11-01 21:39+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
@@ -49,83 +49,73 @@ msgid "download"
 msgstr "allalaetud"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Allalaetud"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "allalaetud"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Filmid"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "filmid"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Muusika"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "muusika"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Fotod"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "fotod"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Pildid"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "pildid"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Projektid"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "projektid"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Avalik"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "avalik"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Maardla"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "maardla"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Mallid"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "mallid"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Videod"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "videod"

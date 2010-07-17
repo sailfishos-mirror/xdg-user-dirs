@@ -2,12 +2,12 @@
 # Copyright (C) 2007 Red Hat, Inc
 # This file is distributed under the same license as the xgd-user-dirs package.
 # Baris Cicek <baris@teamforce.name.tr>, 2007.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-02-27 15:22:+0100\n"
 "Last-Translator: Baris Cicek <baris@teamforce.name.tr>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
@@ -48,83 +48,73 @@ msgid "download"
 msgstr "indirilenler"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "İndirilenler"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "indirilenler"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Filmler"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "filmler"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Müzik"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "müzik"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Fotoğraflar"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "fotoğraflar"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Resimler"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "resimler"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Projeler"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "projeler"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Genel"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "genel"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Paylaşım"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "paylaşım"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Şablonlar"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "şablonlar"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Videolar"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "videolar"

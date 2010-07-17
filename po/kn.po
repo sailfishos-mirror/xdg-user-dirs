@@ -2,13 +2,13 @@
 # Copyright (C) 2008 THE xdg-user-dirs.HEAD.po'S Swatantra.org
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Vikram Vincent <vincentvikram@swatantra.org>, 2008.
-#
-#
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs-0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2008-04-18 09:39+0530\n"
 "Last-Translator: Vikram Vincent <vincentvikram@swatantra.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -49,84 +49,74 @@ msgid "download"
 msgstr "ನಕಲಿಳಿಸು"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "ನಕಲಿಳಿಸು"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "ನಕಲಿಳಿಸು"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "ಚಲನಚಿತ್ರಗಳು"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "ಚಲನಚಿತ್ರಗಳು"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "ಸಂಗೀತ"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "ಸಂಗೀತ"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "ಛಾಯಚಿತ್ರಗಳು"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "ಛಾಯಚಿತ್ರಗಳು"
 
 #  48x48/emblems/emblem-pictures.icon.in.h:1
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "ಚಿತ್ರಗಳು"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "ಚಿತ್ರಗಳು"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "ಕಲ್ಪನೆಗಳು"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "ಕಲ್ಪನೆಗಳು"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "ಹಂಚು"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "ಹಂಚು"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "ಮಾದರಿಗಳು"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "ಮಾದರಿಗಳು"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "ವಿಡಿಯೊಗಳು"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "ವಿಡಿಯೊಗಳು"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs-0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2009-09-03 14:12+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <(nothing)>\n"
@@ -49,83 +49,73 @@ msgid "download"
 msgstr "niðurhal"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Niðurhal"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "niðurhal"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Bíómyndir"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "bíómyndir"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Tónlist"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "tónlist"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Ljósmyndir"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "ljósmyndir"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Myndir"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "myndir"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Verkefni"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "verkefni"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Opið"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "opið"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Sameign"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "sameign"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Sniðmát"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "sniðmát"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Vídeó"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "vídeó"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-03-06 23:25+0100\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
@@ -47,83 +47,73 @@ msgid "download"
 msgstr "download"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Download"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "download"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Filmes"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "filmes"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Música"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "música"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Fotografias"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "fotografias"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Imagens"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "imagens"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Projectos"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "projectos"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Público"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "público"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Partilha"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "partilha"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Modelos"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "modelos"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Vídeos"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "vídeos"

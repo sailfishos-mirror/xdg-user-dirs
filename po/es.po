@@ -1,18 +1,19 @@
-# Spanish translation for xdg-user-dirs.
+# Spanish translation for xdg-user-dirs-0.11-pre1.po
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Domingo Becker <domingobecker@gmail.com>, 2007.
-#
+# Jorge González González  <aloriel@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs\n"
+"Project-Id-Version: xdg-user-dirs-0.11-pre1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
-"PO-Revision-Date: 2007-08-13 09:43+0000\n"
-"Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
+"POT-Creation-Date: 2009-09-18 14:16+0200\n"
+"PO-Revision-Date: 2010-02-21 12:41+0100\n"
+"Last-Translator: Jorge González González <aloriel@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -47,12 +48,10 @@ msgid "download"
 msgstr "descargas"
 
 #: translate.c:6
-#, fuzzy
 msgid "Downloads"
 msgstr "Descargas"
 
 #: translate.c:6
-#, fuzzy
 msgid "downloads"
 msgstr "descargas"
 
@@ -122,8 +121,8 @@ msgstr "plantillas"
 
 #: translate.c:15
 msgid "Videos"
-msgstr "Videos"
+msgstr "Vídeos"
 
 #: translate.c:15
 msgid "videos"
-msgstr "videos"
+msgstr "vídeos"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-05-23 23:43+0200\n"
 "Last-Translator: Arangel Angov <ufo@linux.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -50,83 +50,73 @@ msgid "download"
 msgstr "преземања"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Преземања"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "преземања"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Филмови"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "филмови"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Музика"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "музика"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Слики"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "слики"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Слики"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "слики"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Проекти"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "проекти"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Јавно"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "јавно"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Делење"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "делење"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Мостри"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "мостри"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Видеа"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "видеа"

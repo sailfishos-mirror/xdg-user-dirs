@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-07-17 12:00-0800\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -48,83 +48,73 @@ msgid "download"
 msgstr "завантаження"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Завантаження"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "завантаження"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Фільми"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "фільми"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Музика"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "музика"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Фотографії"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "фотографії"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Картинки"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "картинки"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Проекти"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "проекти"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Загальнодоступні"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "загальнодоступні"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Спільні файли"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "спільні файли"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Шаблони"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "шаблони"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Відео"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "відео"

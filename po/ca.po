@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2007-03-05 03:37+0100\n"
 "Last-Translator: Josep Puigdemont <josep.puigdemont@gmail.com>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -49,83 +49,73 @@ msgid "download"
 msgstr "baixades"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Baixades"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "baixades"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Pel·lícules"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "pel·lícules"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Música"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "música"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Fotografies"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "fotografies"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Imatges"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "imatges"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Projectes"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "projectes"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Públic"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "públic"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Compartit"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "compartit"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Plantilles"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "plantilles"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Vídeos"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "vídeos"

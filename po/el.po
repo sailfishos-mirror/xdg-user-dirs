@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs 0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"POT-Creation-Date: 2008-02-12 14:17+0100\n"
 "PO-Revision-Date: 2009-05-23 19:15+0200\n"
 "Last-Translator: Simos Xenitellis <simos.lists@googlemail.com>\n"
 "Language-Team: Greek <team@lists.gnome.gr>\n"
@@ -49,83 +49,73 @@ msgid "download"
 msgstr "λήψεις"
 
 #: translate.c:6
-#, fuzzy
-msgid "Downloads"
-msgstr "Λήψεις"
-
-#: translate.c:6
-#, fuzzy
-msgid "downloads"
-msgstr "λήψεις"
-
-#: translate.c:7
 msgid "Movies"
 msgstr "Ταινίες"
 
-#: translate.c:7
+#: translate.c:6
 msgid "movies"
 msgstr "ταινίες"
 
-#: translate.c:8
+#: translate.c:7
 msgid "Music"
 msgstr "Μουσική"
 
-#: translate.c:8
+#: translate.c:7
 msgid "music"
 msgstr "μουσική"
 
-#: translate.c:9
+#: translate.c:8
 msgid "Photos"
 msgstr "Φωτογραφίες"
 
-#: translate.c:9
+#: translate.c:8
 msgid "photos"
 msgstr "φωτογραφίες"
 
-#: translate.c:10
+#: translate.c:9
 msgid "Pictures"
 msgstr "Εικόνες"
 
-#: translate.c:10
+#: translate.c:9
 msgid "pictures"
 msgstr "εικόνες"
 
-#: translate.c:11
+#: translate.c:10
 msgid "Projects"
 msgstr "Έργα"
 
-#: translate.c:11
+#: translate.c:10
 msgid "projects"
 msgstr "έργα"
 
-#: translate.c:12
+#: translate.c:11
 msgid "Public"
 msgstr "Δημόσια"
 
-#: translate.c:12
+#: translate.c:11
 msgid "public"
 msgstr "δημόσια"
 
-#: translate.c:13
+#: translate.c:12
 msgid "Share"
 msgstr "Κοινόχρηστα"
 
-#: translate.c:13
+#: translate.c:12
 msgid "share"
 msgstr "κοινόχρηστα"
 
-#: translate.c:14
+#: translate.c:13
 msgid "Templates"
 msgstr "Πρότυπα"
 
-#: translate.c:14
+#: translate.c:13
 msgid "templates"
 msgstr "πρότυπα"
 
-#: translate.c:15
+#: translate.c:14
 msgid "Videos"
 msgstr "Βίντεο"
 
-#: translate.c:15
+#: translate.c:14
 msgid "videos"
 msgstr "βίντεο"
