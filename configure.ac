@@ -26,7 +26,7 @@ dnl ==========================================================================
 dnl Turn on the additional warnings last, so -Werror doesn't affect other tests.
 
 AC_ARG_ENABLE(more-warnings,
-[  --enable-more-warnings  Maximum compiler warnings],
+	AS_HELP_STRING([--enable-more-warnings],[Maximum compiler warnings]),
 set_more_warnings="$enableval",[
 if test -f $srcdir/CVSVERSION; then
 	is_cvs_version=true
