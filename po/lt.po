@@ -6,15 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2010-09-13 09:17+0200\n"
 "PO-Revision-Date: 2007-03-22 16:59+0200\n"
 "Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -49,73 +51,83 @@ msgid "download"
 msgstr "parsiuntimai"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "Parsiuntimai"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "parsiuntimai"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Filmai"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "filmai"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Muzika"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "Muzika"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Nuotraukos"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "nuotraukos"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Paveikslėliai"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "paveikslėliai"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Projektai"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "projektai"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Vieša"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "vieša"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Bendra"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "bendra"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Šablonai"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "šablonai"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Video"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "video"

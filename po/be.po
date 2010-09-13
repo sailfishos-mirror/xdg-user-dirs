@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs 0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2010-09-13 09:17+0200\n"
 "PO-Revision-Date: 2008-03-19 08:32+0200\n"
 "Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,73 +49,83 @@ msgid "download"
 msgstr "запампоўкі"
 
 #: translate.c:6
+#, fuzzy
+msgid "Downloads"
+msgstr "Запампоўкі"
+
+#: translate.c:6
+#, fuzzy
+msgid "downloads"
+msgstr "запампоўкі"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "Фільмы"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "фільмы"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "Музыка"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "музыка"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "Фота"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "фота"
 
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "Малюнкі"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "малюнкі"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "Праекты"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "праекты"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "Публічныя"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "публічныя"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "Агульныя"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "агульныя"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "Шаблёны"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "шаблёны"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "Відэа"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "відэа"
