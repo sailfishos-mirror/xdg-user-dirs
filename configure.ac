@@ -1,6 +1,6 @@
 AC_INIT(xdg-user-dirs-update.c)
 
-AM_INIT_AUTOMAKE(xdg-user-dirs, 0.12)
+AM_INIT_AUTOMAKE(xdg-user-dirs, 0.13)
 AM_CONFIG_HEADER(config.h)
 	
 AM_SANITY_CHECK
