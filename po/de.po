@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Hendrik Richter <hendrikr@gnome.org>, 2007.
 # Roland Illig <roland.illig@gmx.de>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
+"Project-Id-Version: xdg-user-dirs 0.13\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-13 09:17+0200\n"
-"PO-Revision-Date: 2009-11-11 01:00+0100\n"
-"Last-Translator: Roland Illig <roland.illig@gmx.de>\n"
+"PO-Revision-Date: 2011-04-05 20:21+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -27,11 +28,11 @@ msgstr "anwendungen"
 
 #: translate.c:3
 msgid "Desktop"
-msgstr "Desktop"
+msgstr "Arbeitsfläche"
 
 #: translate.c:3
 msgid "desktop"
-msgstr "desktop"
+msgstr "arbeitsflaeche"
 
 #: translate.c:4
 msgid "Documents"
