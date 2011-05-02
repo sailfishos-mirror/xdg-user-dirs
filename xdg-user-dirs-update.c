@@ -753,7 +753,7 @@ save_user_dirs (void)
   
   if (stat (dir, &stat_buf) == -1 && errno == ENOENT)
     {
-      if (mkdir (dir, 0755) == -1)
+      if (mkdir (dir, 0700) == -1)
 	{
 	  free (dir);
 	  fprintf (stderr, "Can't save user-dirs.dirs, failed to create directory\n");
