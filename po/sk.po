@@ -1,17 +1,17 @@
 # Slovak translation of xdg-user-dirs.
-# Copyright (C) 2007 Red Hat, Inc 
+# Copyright (C) 2007, 2011 Red Hat, Inc 
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Pavol Šimo <palo.simo@post.sk>, 2007.
+# Pavol Šimo <palo.simo@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs\n"
+"Project-Id-Version: xdg-user-dirs 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-13 09:17+0200\n"
-"PO-Revision-Date: 2007-11-07 11:27+0100\n"
-"Last-Translator: Pavol Šimo <palo.simo@post.sk>\n"
+"POT-Creation-Date: 2009-11-05 16:02+0100\n"
+"PO-Revision-Date: 2011-02-03 09:10+0100\n"
+"Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,12 +49,10 @@ msgid "download"
 msgstr "stiahnuté"
 
 #: translate.c:6
-#, fuzzy
 msgid "Downloads"
 msgstr "Stiahnuté"
 
 #: translate.c:6
-#, fuzzy
 msgid "downloads"
 msgstr "stiahnuté"
 
