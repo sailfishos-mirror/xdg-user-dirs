@@ -1,15 +1,16 @@
-# -*- mode:po; coding:utf-8; -*- Slovenian message catalogue for xdg-user-dirs.
+# Slovenian translation of xdg-user-dirs.
+# Copyright (C) 2009 - 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xdg-user-dirs package.
-# Benno Schulenberg <benno@vertaalt.nl>, 2008.
 # Matej Urbančič <matej.urban@gmail.com>, 2009.
+# Klemen Košir <klemen.kosir@gmx.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
+"Project-Id-Version: xdg-user-dirs 0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-13 09:17+0200\n"
-"PO-Revision-Date: 2009-12-30 10:42+0100\n"
-"Last-Translator: Matej Urbančič <matej.urban@gmail.com>\n"
+"POT-Creation-Date: 2012-11-03 19:38+0100\n"
+"PO-Revision-Date: 2012-05-18 16:02+0100\n"
+"Last-Translator: Klemen Košir <klemen.kosir@gmx.com>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-Country: SLOVENIA\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -47,19 +45,19 @@ msgstr "dokumenti"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Prejmi"
+msgstr "Prejemi"
 
 #: translate.c:5
 msgid "download"
-msgstr "prejmi"
+msgstr "prejemi"
 
 #: translate.c:6
 msgid "Downloads"
-msgstr "Prejeto"
+msgstr "Prejemi"
 
 #: translate.c:6
 msgid "downloads"
-msgstr "prejeto"
+msgstr "prejemi"
 
 #: translate.c:7
 msgid "Movies"
@@ -109,8 +107,6 @@ msgstr "Javno"
 msgid "public"
 msgstr "javno"
 
-# Maybe "Deliti" or "Deljen" instead.
-# Windows however uses "Skupni rabi".
 #: translate.c:13
 msgid "Share"
 msgstr "Souporaba"

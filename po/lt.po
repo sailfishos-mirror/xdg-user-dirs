@@ -4,9 +4,9 @@
 # Gintautas Miliauskas <gintautas@miliauskas.lt>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs-0.12\n"
+"Project-Id-Version: xdg-user-dirs-0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-13 09:17+0200\n"
+"POT-Creation-Date: 2012-11-03 19:38+0100\n"
 "PO-Revision-Date: 2010-09-28 00:56+0300\n"
 "Last-Translator: Gintautas Miliauskas <gintautas@miliauskas.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -44,19 +44,19 @@ msgstr "dokumentai"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Parsiuntimai"
+msgstr "Atsiuntimai"
 
 #: translate.c:5
 msgid "download"
-msgstr "parsiuntimai"
+msgstr "atsiuntimai"
 
 #: translate.c:6
 msgid "Downloads"
-msgstr "Parsiuntimai"
+msgstr "Atsiuntimai"
 
 #: translate.c:6
 msgid "downloads"
-msgstr "parsiuntimai"
+msgstr "atsiuntimai"
 
 #: translate.c:7
 msgid "Movies"
