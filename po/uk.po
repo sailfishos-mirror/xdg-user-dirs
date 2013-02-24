@@ -4,22 +4,21 @@
 #
 #
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2007.
-# Yuri Chornoivan <yurchor@ukr.net>, 2011.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.13\n"
+"Project-Id-Version: xdg-user-dirs 0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-03 19:38+0100\n"
-"PO-Revision-Date: 2011-04-27 18:29+0300\n"
+"POT-Creation-Date: 2010-09-13 09:17+0200\n"
+"PO-Revision-Date: 2013-02-14 07:59+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -31,11 +30,11 @@ msgstr "програми"
 
 #: translate.c:3
 msgid "Desktop"
-msgstr "Робочий стіл"
+msgstr "Стільниця"
 
 #: translate.c:3
 msgid "desktop"
-msgstr "робочий стіл"
+msgstr "стільниця"
 
 #: translate.c:4
 msgid "Documents"
@@ -55,11 +54,11 @@ msgstr "завантаження"
 
 #: translate.c:6
 msgid "Downloads"
-msgstr "Завантаження"
+msgstr "Завантажене"
 
 #: translate.c:6
 msgid "downloads"
-msgstr "завантаження"
+msgstr "завантажене"
 
 #: translate.c:7
 msgid "Movies"
@@ -103,19 +102,19 @@ msgstr "проекти"
 
 #: translate.c:12
 msgid "Public"
-msgstr "Загальнодоступні"
+msgstr "Загальне"
 
 #: translate.c:12
 msgid "public"
-msgstr "загальнодоступні"
+msgstr "загальне"
 
 #: translate.c:13
 msgid "Share"
-msgstr "Спільні файли"
+msgstr "Спільне"
 
 #: translate.c:13
 msgid "share"
-msgstr "спільні файли"
+msgstr "спільне"
 
 #: translate.c:14
 msgid "Templates"
