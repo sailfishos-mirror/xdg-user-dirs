@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs-0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 14:17+0100\n"
+"POT-Creation-Date: 2013-06-27 10:18+0200\n"
 "PO-Revision-Date: 2012-12-10 18:05+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -53,80 +53,82 @@ msgid "download"
 msgstr "ಇಳಿಸು"
 
 #: translate.c:6
+msgid "Downloads"
+msgstr "ಇಳಿಕೆಗಳು"
+
+#: translate.c:6
+msgid "downloads"
+msgstr "ಇಳಿಕೆಗಳು"
+
+#: translate.c:7
 msgid "Movies"
 msgstr "ಚಲನಚಿತ್ರಗಳು"
 
-#: translate.c:6
+#: translate.c:7
 msgid "movies"
 msgstr "ಚಲನಚಿತ್ರಗಳು"
 
-#: translate.c:7
+#: translate.c:8
 msgid "Music"
 msgstr "ಸಂಗೀತ"
 
-#: translate.c:7
+#: translate.c:8
 msgid "music"
 msgstr "ಸಂಗೀತ"
 
-#: translate.c:8
+#: translate.c:9
 msgid "Photos"
 msgstr "ಛಾಯಚಿತ್ರಗಳು"
 
-#: translate.c:8
+#: translate.c:9
 msgid "photos"
 msgstr "ಛಾಯಾಚಿತ್ರಗಳು"
 
 #  48x48/emblems/emblem-pictures.icon.in.h:1
-#: translate.c:9
+#: translate.c:10
 msgid "Pictures"
 msgstr "ಚಿತ್ರಗಳು"
 
-#: translate.c:9
+#: translate.c:10
 msgid "pictures"
 msgstr "ಚಿತ್ರಗಳು"
 
-#: translate.c:10
+#: translate.c:11
 msgid "Projects"
 msgstr "ಯೋಜನೆಗಳು"
 
-#: translate.c:10
+#: translate.c:11
 msgid "projects"
 msgstr "ಯೋಜನೆಗಳು"
 
-#: translate.c:11
+#: translate.c:12
 msgid "Public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
-#: translate.c:11
+#: translate.c:12
 msgid "public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
-#: translate.c:12
+#: translate.c:13
 msgid "Share"
 msgstr "ಹಂಚು"
 
-#: translate.c:12
+#: translate.c:13
 msgid "share"
 msgstr "ಹಂಚು"
 
-#: translate.c:13
+#: translate.c:14
 msgid "Templates"
 msgstr "ಮಾದರಿಗಳು"
 
-#: translate.c:13
+#: translate.c:14
 msgid "templates"
 msgstr "ಮಾದರಿಗಳು"
 
-#: translate.c:14
+#: translate.c:15
 msgid "Videos"
 msgstr "ವಿಡಿಯೊಗಳು"
 
-#: translate.c:14
+#: translate.c:15
 msgid "videos"
 msgstr "ವಿಡಿಯೊಗಳು"
-
-#~ msgid "Downloads"
-#~ msgstr "ಇಳಿಕೆಗಳು"
-
-#~ msgid "downloads"
-#~ msgstr "ಇಳಿಕೆಗಳು"

@@ -20,9 +20,9 @@ DIE=0
 	DIE=1
 }
 
-if automake-1.11 --version < /dev/null > /dev/null 2>&1 ; then
-    AUTOMAKE=automake-1.11
-    ACLOCAL=aclocal-1.11
+if automake-1.12 --version < /dev/null > /dev/null 2>&1 ; then
+    AUTOMAKE=automake-1.12
+    ACLOCAL=aclocal-1.12
 else
 	echo
 	echo "You must have automake 1.11.x installed to compile $PROJECT."
