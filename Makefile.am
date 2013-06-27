@@ -1,6 +1,9 @@
 NULL =
 
-SUBDIRS=po man
+SUBDIRS=po
+if BUILD_DOCUMENTATION
+SUBDIRS += man
+endif
 
 INCLUDES =					\
 	-I$(top_srcdir)				\
