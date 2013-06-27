@@ -1,3 +1,7 @@
+Major changes in 0.15 are:
+* Updated translations
+* Added manpages
+
 Major changes in 0.14 are:
 * Updated translations
 * Fix permissions of ~/.config if created (should be 0700)
