@@ -1,6 +1,6 @@
 NULL =
 
-SUBDIRS=po
+SUBDIRS=po man
 
 INCLUDES =					\
 	-I$(top_srcdir)				\
