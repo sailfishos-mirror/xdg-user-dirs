@@ -19,7 +19,7 @@ man_MANS = \
 	user-dirs.defaults.5 \
 	user-dirs.dirs.5
 
-xml_files = $($(man_MANS:.1=.xml):.5=.xml)
+xml_files = $(patsubst %.5,%.xml,$(patsubst %.1,%.xml,$(man_MANS)))
 
 EXTRA_DIST = $(xml_files)
 
