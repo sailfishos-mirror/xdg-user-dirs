@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs-0.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-27 10:18+0200\n"
-"PO-Revision-Date: 2013-02-14 04:21+0600\n"
-"Last-Translator: Chynggyz Jumaliev <translatorky@lavabit.com>\n"
+"POT-Creation-Date: 2010-09-13 09:17+0200\n"
+"PO-Revision-Date: 2013-04-18 04:43+0600\n"
+"Last-Translator: Chingis Jumaliev <translatorky@lavabit.com>\n"
 "Language-Team: Kirghiz <i18n-team-ky-kyrgyz@lists.sourceforge.net>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -46,19 +46,19 @@ msgstr "иш кагаздар"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Жүктөп алуулар"
+msgstr "Жүктөө"
 
 #: translate.c:5
 msgid "download"
-msgstr "жүктөп алуулар"
+msgstr "жүктөө"
 
 #: translate.c:6
 msgid "Downloads"
-msgstr "Жүктөп алуулар"
+msgstr "Жүктөөлөр"
 
 #: translate.c:6
 msgid "downloads"
-msgstr "жүктөп алуулар"
+msgstr "жүктөөлөр"
 
 #: translate.c:7
 msgid "Movies"
@@ -118,11 +118,11 @@ msgstr "бөлүшүү"
 
 #: translate.c:14
 msgid "Templates"
-msgstr "Калыптар"
+msgstr "Шаблондор"
 
 #: translate.c:14
 msgid "templates"
-msgstr "калыптар"
+msgstr "шаблондор"
 
 #: translate.c:15
 msgid "Videos"
