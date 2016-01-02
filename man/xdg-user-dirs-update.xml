@@ -36,7 +36,7 @@
 
 <refsect1><title>Description</title>
 <para><command>xdg-user-dirs-update</command> updates the current
-state of the users <filename>user-dirs.dir</filename>. If none existed
+state of the users <filename>user-dirs.dirs</filename>. If none existed
 before then one is created based on the system default values, or
 falling back to the old non-translated filenames if such directories
 exists. The list of old directories used are: <filename>~/Desktop</filename>,
@@ -70,7 +70,7 @@ locale.</para>
   </varlistentry>
   <varlistentry>
     <term><option>--force</option></term>
-    <listitem><para>Update existing <filename>user-dirs.dir</filename>, but force a full reset.
+    <listitem><para>Update existing <filename>user-dirs.dirs</filename>, but force a full reset.
     This means: Don't reset nonexisting directories to HOME, rather recreate the directory.
     Never use backwards compatible non-translated names. Always recreate <filename>user-dirs.locale</filename>.
     </para></listitem>
@@ -102,7 +102,7 @@ locale.</para>
 
 <refsect1><title>Files</title>
   <para>The XDG user dirs configuration is stored in the
-  <filename>user-dirs.dir</filename> file in the location pointed to
+  <filename>user-dirs.dirs</filename> file in the location pointed to
   by the <envar>XDG_CONFIG_HOME</envar> environment variable.</para>
 </refsect1>
 

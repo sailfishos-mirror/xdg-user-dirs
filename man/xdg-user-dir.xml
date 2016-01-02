@@ -52,7 +52,7 @@ The possible names are:
 </refsect1>
 
 <refsect1><title>Files</title>
-  <para>The values are looked up in the <filename>user-dirs.dir</filename>
+  <para>The values are looked up in the <filename>user-dirs.dirs</filename>
   file. This file is created by the xdg-user-dirs-update utility.</para>
 </refsect1>
 
