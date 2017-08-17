@@ -19,6 +19,9 @@ EXTRA_DIST= config.rpath translate.c autogen.sh \
 xdgdir=$(sysconfdir)/xdg
 xdg_DATA=user-dirs.conf user-dirs.defaults
 
+xdgautostartdir=$(xdgdir)/autostart
+xdgautostart_DATA = xdg-user-dirs.desktop
+
 libraries = $(LIBINTL)
 
 bin_PROGRAMS =					\
