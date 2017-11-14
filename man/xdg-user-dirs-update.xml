@@ -52,11 +52,11 @@ directory, so they likely don't want to use it anymore.
 <para>
 On the first run a <filename>user-dirs.locale</filename> file is
 created containing the locale that was used for the translation. This
-is used later by gui tools like
+is used later by GUI tools like
 <command>xdg-user-dirs-gtk-update</command> to detect if the locale
 was changed, letting you to migrate from the old names.</para>
 
-<para>xdg-user-dirs-update is normally run automatically at the start
+<para><command>xdg-user-dirs-update</command> is normally run automatically at the start
 of a user session to update the XDG user dirs according to the users
 locale.</para>
 </refsect1>

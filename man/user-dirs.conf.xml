@@ -45,7 +45,7 @@ change the XDG user dirs configuration.</para></listitem>
 <varlistentry>
 <term>filename_encoding=<replaceable>encoding</replaceable></term>
 <listitem><para>This sets the filename encoding to use.
-<replaceable>encoding</replaceable> can be an explict encoding name,
+<replaceable>encoding</replaceable> can be an explicit encoding name,
 such as UTF-8, or "locale", which means the encoding of the users
 locale will be used.</para></listitem>
 </varlistentry>

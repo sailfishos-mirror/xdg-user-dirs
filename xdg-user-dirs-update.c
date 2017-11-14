@@ -786,7 +786,7 @@ save_user_dirs (void)
 
   fprintf (file, "# This file is written by xdg-user-dirs-update\n");
   fprintf (file, "# If you want to change or add directories, just edit the line you're\n");
-  fprintf (file, "# interested in. All local changes will be retained on the next run\n");
+  fprintf (file, "# interested in. All local changes will be retained on the next run.\n");
   fprintf (file, "# Format is XDG_xxx_DIR=\"$HOME/yyy\", where yyy is a shell-escaped\n");
   fprintf (file, "# homedir-relative path, or XDG_xxx_DIR=\"/yyy\", where /yyy is an\n");
   fprintf (file, "# absolute path. No other format is supported.\n");
@@ -1006,7 +1006,7 @@ main (int argc, char *argv[])
     locale_dir = strdup (LOCALEDIR);
   else
     {
-      /* In case LOCALEDIR does not exist, e.x. xdg-user-dirs is installed in
+      /* In case LOCALEDIR does not exist, e.g. xdg-user-dirs is installed in
        * a different location than the one determined at compile time, look
        * through the XDG_DATA_DIRS environment variable for alternate locations
        * of the locale files */
