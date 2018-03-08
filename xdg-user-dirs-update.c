@@ -277,18 +277,26 @@ get_home_dir (void)
 {
   struct passwd *pw;
   static char *home_dir = NULL;
+  const char *home_env;
 
   if (home_dir != NULL)
     return home_dir;
 
-  setpwent ();
-  pw = getpwuid (getuid ());
-  endpwent ();
-  
-  if (pw && pw->pw_dir)
-    home_dir = strdup (pw->pw_dir);
+  home_env = getenv ("HOME");
+
+  if (home_env && *home_env)
+    {
+      home_dir = strdup (home_env);
+    }
   else
-    home_dir = getenv ("HOME");
+    {
+      setpwent ();
+      pw = getpwuid (getuid ());
+      endpwent ();
+
+      if (pw && pw->pw_dir)
+	home_dir = strdup (pw->pw_dir);
+    }
 
   return home_dir;
 }
