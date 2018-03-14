@@ -1,3 +1,8 @@
+Major changes in 0.17 are:
+ * Respect $HOME in favour of getpwuid()
+ * Updated translations
+ * Documentation spelling fixes
+
 Major changes in 0.16 are:
 * Added autostart file
 
