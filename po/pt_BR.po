@@ -2,20 +2,23 @@
 # This file is distributed under the same license as the xdg-user-dirs package.
 # Based on the translation by Duarte Loreto <happyguy_pt@hotmail.com>.
 # Evandro Fernandes Giovanini <efgiovanini@gmail.com>, 2007.
-# André Gondim <andregondim@ubuntu.com>, 2010, 2011.
-#
+# André Gondim <In Memoriam>, 2010, 2011.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014, 2017, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.12\n"
+"Project-Id-Version: xdg-user-dirs 0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-14 10:09+0100\n"
-"PO-Revision-Date: 2011-03-30 18:11-0300\n"
-"Last-Translator: André Gondim <andregondim@ubuntu.com>\n"
-"Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
+"PO-Revision-Date: 2018-03-14 08:49-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge.net>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 1.0.0-beta1\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -67,11 +70,11 @@ msgstr "filmes"
 
 #: translate.c:8
 msgid "Music"
-msgstr "Música"
+msgstr "Músicas"
 
 #: translate.c:8
 msgid "music"
-msgstr "música"
+msgstr "músicas"
 
 #: translate.c:9
 msgid "Photos"
