@@ -35,24 +35,36 @@ fi
 PO_NEW=$(git ls-files -o | gawk '/po\/[[:alpha:]_\-]*\.po/ { sub("po/", ""); print $0; }' | sort)
 PO_MOD=$(git ls-files -m | gawk '/po\/[[:alpha:]_\-]*\.po/ { sub("po/", ""); print $0; }' | sort)
 
+function add_to_linguas {
+	local LANG="$1"
+	local LINGUAS="$2"
+
+	echo $LANG >> $LINGUAS
+	sort -u $LINGUAS | sed '/^#/d' > $LINGUAS-new
+	sed -i '1s/^/# please keep this list sorted alphabetically\n/' $LINGUAS-new
+	mv $LINGUAS-new $LINGUAS
+}
+
 function get_author {
 	echo $(gawk 'BEGIN { FS=": " } /Last-Translator/ { sub("\\\\n\"", ""); print $2 }' "$1")
 }
 
 function do_commit {
-	local POFILE="$1"
-	local MSG="$2"
+	local MSG="$1"
+	local POFILE="$2"
+	local LINGUAS="$3"
 	local AUTHOR=$(get_author "$POFILE")
 
-	git commit --author "$AUTHOR" -m "$MSG" "$POFILE"
+	git commit --author "$AUTHOR" -m "$MSG" "$POFILE" $LINGUAS
 }
 
 for f in $PO_MOD; do
-	do_commit "po/$f" "po: update $f (from translationproject.org)"
+	do_commit "po: update $f (from translationproject.org)" "po/$f"
 done
 
 for f in $PO_NEW; do
 	git add "po/$f"
-	do_commit "po/$f" "po: add $f (from translationproject.org)"
+	add_to_linguas "$f" "po/LINGUAS"
+	do_commit "po: add $f (from translationproject.org)" "po/$f" "po/LINGUAS"
 done
 
