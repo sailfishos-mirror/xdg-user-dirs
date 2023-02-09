@@ -14,13 +14,15 @@ INCLUDES =					\
 	$(NULL)
 
 EXTRA_DIST= config.rpath translate.c autogen.sh \
-	user-dirs.conf user-dirs.defaults xdg-user-dir xdg-user-dirs.desktop
+	user-dirs.conf user-dirs.defaults xdg-user-dir xdg-user-dirs.desktop xdg-user-dirs.service
 
 xdgdir=$(sysconfdir)/xdg
 xdg_DATA=user-dirs.conf user-dirs.defaults
 
 xdgautostartdir=$(xdgdir)/autostart
 xdgautostart_DATA = xdg-user-dirs.desktop
+
+systemduserunit_DATA = xdg-user-dirs.service
 
 libraries = $(LIBINTL)
 

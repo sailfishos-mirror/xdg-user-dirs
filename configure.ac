@@ -77,6 +77,11 @@ if test x$enable_documentation = xyes; then
 fi
 AM_CONDITIONAL(BUILD_DOCUMENTATION, test x$enable_documentation = xyes)
 
+PKG_CHECK_EXISTS([systemd],
+      [systemduserunitdir=$($PKG_CONFIG --variable=systemduserunitdir systemd)],
+      [systemduserunitdir='${prefix}/lib/systemd/user'])
+AC_SUBST(systemduserunitdir)
+
 AC_OUTPUT([ po/Makefile.in
 Makefile
 man/Makefile
