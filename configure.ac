@@ -20,6 +20,7 @@ GETTEXT_PACKAGE=xdg-user-dirs
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [The gettext domain name])
 AC_SUBST(GETTEXT_PACKAGE)
 
+AM_GNU_GETTEXT_REQUIRE_VERSION([0.14.4])
 AM_GNU_GETTEXT([external])
 
 dnl ==========================================================================
