@@ -1,5 +1,5 @@
 # please keep this list sorted alphabetically
-ab.po
+ab
 af
 an
 ar
@@ -11,7 +11,7 @@ bg
 bn_IN
 br
 ca
-ckb.po
+ckb
 crh
 cs
 da
@@ -38,14 +38,14 @@ id
 is
 it
 ja
-ka.po
-kab.po
+ka
+kab
 kk
 kn
 ko
 ku
 ky
-lg.po
+lg
 lt
 lv
 mk
@@ -75,8 +75,7 @@ th
 tr
 uk
 vi
-wa.po
-xdg-user-dirst
+wa
 zh_CN
 zh_HK
 zh_TW
