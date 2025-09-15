@@ -39,7 +39,7 @@ function add_to_linguas {
 	local LANG="$1"
 	local LINGUAS="$2"
 
-	echo $LANG >> $LINGUAS
+	echo ${LANG/.po/} >> $LINGUAS
 	sort -u $LINGUAS | sed '/^#/d' > $LINGUAS-new
 	sed -i '1s/^/# please keep this list sorted alphabetically\n/' $LINGUAS-new
 	mv $LINGUAS-new $LINGUAS
