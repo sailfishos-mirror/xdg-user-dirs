@@ -1,20 +1,30 @@
 # Romanian translation for xdg-user-dirs
-# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# Copyright © 2007, 2009, 2023 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xdg-user-dirs package.
+#
 # Adi Roiban <adi@roiban.ro>, 2009.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023.
+#
+#
+# Cronologia traducerii fișierului „xdg-user-dirs”:
+# Traducerea inițială, făcută de LAG, pentru versiunea xdg-user-dirs 0.11-pre1.
+# Actualizare a traducerii pentru versiunea 0.17, făcută de R-GC, mai-2023.
+# Actualizare a traducerii pentru versiunea Y, făcută de X, Z(luna-anul).
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs 0.11-pre1\n"
+"Project-Id-Version: xdg-user-dirs 0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-14 10:09+0100\n"
-"PO-Revision-Date: 2009-10-03 13:42+0200\n"
-"Last-Translator: Adi Roiban <adi@roiban.ro>\n"
+"PO-Revision-Date: 2023-05-22 20:03+0200\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: translate.c:2
 msgid "Applications"
@@ -26,11 +36,11 @@ msgstr "aplicații"
 
 #: translate.c:3
 msgid "Desktop"
-msgstr "Desktop"
+msgstr "Birou"
 
 #: translate.c:3
 msgid "desktop"
-msgstr "desktop"
+msgstr "birou"
 
 #: translate.c:4
 msgid "Documents"
@@ -42,11 +52,11 @@ msgstr "documente"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Descărcări"
+msgstr "Descărcare"
 
 #: translate.c:5
 msgid "download"
-msgstr "descărcări"
+msgstr "descărcare"
 
 #: translate.c:6
 msgid "Downloads"
@@ -82,11 +92,11 @@ msgstr "fotografii"
 
 #: translate.c:10
 msgid "Pictures"
-msgstr "Poze"
+msgstr "Imagini"
 
 #: translate.c:10
 msgid "pictures"
-msgstr "poze"
+msgstr "imagini"
 
 #: translate.c:11
 msgid "Projects"
