@@ -1,8 +1,10 @@
 .deps
+m4/
 Makefile
 Makefile.in
 aclocal.m4
 autom4te.cache
+compile
 config.guess
 config.h
 config.h.in
@@ -17,8 +19,8 @@ stamp-h1
 *~
 
 po/remove-potcdate.sed
+po/insert-header.sed
 po/stamp-po
-po/xdg-user-dirs.pot
 po/POTFILES
 *.gmo
 
@@ -28,5 +30,3 @@ xdg-user-dir-lookup
 xdg-user-dirs-update
 
 xdg-user-dirs-*.tar*
-
-
