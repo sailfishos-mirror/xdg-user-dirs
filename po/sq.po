@@ -1,38 +1,39 @@
-# Përkthimi i xdg-user-dirs në shqip.
+# Albanian translation of xdg-user-dirs.
+# Copyright (C) 2018 Red Hat, Inc
 # This file is distributed under the same license as the xdg-user-dirs package.
-# Laurent Dhima <laurenti@alblinux.net>, 2008.
+# Besnik Bleta <besnik@programeshqip.org>, 2020.
 #
-# Koment i shtuar për të kontrolluar kodifikimin "UTF-8".
-# Përkthim i filluar për versionin 2.22 të GNOME.
 msgid ""
 msgstr ""
-"Project-Id-Version: xdg-user-dirs HEAD\n"
+"Project-Id-Version: xdg-user-dirs-0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-14 10:09+0100\n"
-"PO-Revision-Date: 2008-03-14 11:20+0100\n"
-"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"PO-Revision-Date: 2020-04-01 13:48+0300\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <translation-team-sq@lists.sourceforge.net>\n"
 "Language: sq\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: translate.c:2
 msgid "Applications"
-msgstr "Aplikativë"
+msgstr "Aplikacione"
 
 #: translate.c:2
 msgid "applications"
-msgstr "aplikativë"
+msgstr "aplikacione"
 
 #: translate.c:3
 msgid "Desktop"
-msgstr "Hapësira e punës"
+msgstr "Desktop"
 
 #: translate.c:3
 msgid "desktop"
-msgstr "hapësira e punës"
+msgstr "desktop"
 
 #: translate.c:4
 msgid "Documents"
@@ -44,21 +45,19 @@ msgstr "dokumente"
 
 #: translate.c:5
 msgid "Download"
-msgstr "Shkarkuar"
+msgstr "Shkarkim"
 
 #: translate.c:5
 msgid "download"
-msgstr "shkarkuar"
+msgstr "shkarkim"
 
 #: translate.c:6
-#, fuzzy
 msgid "Downloads"
-msgstr "Shkarkuar"
+msgstr "Shkarkime"
 
 #: translate.c:6
-#, fuzzy
 msgid "downloads"
-msgstr "shkarkuar"
+msgstr "shkarkime"
 
 #: translate.c:7
 msgid "Movies"
@@ -78,11 +77,11 @@ msgstr "muzikë"
 
 #: translate.c:9
 msgid "Photos"
-msgstr "Fotografi"
+msgstr "Foto"
 
 #: translate.c:9
 msgid "photos"
-msgstr "fotografi"
+msgstr "foto"
 
 #: translate.c:10
 msgid "Pictures"
@@ -110,19 +109,19 @@ msgstr "publike"
 
 #: translate.c:13
 msgid "Share"
-msgstr "Të përbashkët"
+msgstr "Ndarje"
 
 #: translate.c:13
 msgid "share"
-msgstr "të përbashkët"
+msgstr "ndarje"
 
 #: translate.c:14
 msgid "Templates"
-msgstr "Modele"
+msgstr "Gjedhe"
 
 #: translate.c:14
 msgid "templates"
-msgstr "modele"
+msgstr "gjedhe"
 
 #: translate.c:15
 msgid "Videos"
