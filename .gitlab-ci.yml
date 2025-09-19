@@ -13,6 +13,7 @@ stages:
   - build
 
 build:
+  stage: build
   before_script:
     - apt-get update -qq && apt-get install -yq eatmydata
     - eatmydata apt-get install -yq $DEPENDENCIES
