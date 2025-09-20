@@ -4,7 +4,7 @@ project('xdg-user-dirs', 'c',
     'c_std=gnu11',
   ],
 
-  version: '0.19',
+  version: '0.20',
   license: 'GPL-2.0-or-later',
 )
 
