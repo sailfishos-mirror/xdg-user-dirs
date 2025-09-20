@@ -1,7 +1,33 @@
-Major changes in 0.18 are:
- * Fixed minor leak
+Version 0.19
+------------
+Released: 2025-09-20
+
+Features:
+ * Add a systemd service to run xdg-user-dirs-update
+ * Add initial Meson buildsystem support
+
+Bugfixes:
+ * Fix autopoint invocation
+
+Miscellaneous:
  * Updated translations
+ * Update automake boilerplate
+ * Update information in README
+
+Version 0.18
+------------
+Released: 2022-08-01
+
+Bugfixes:
+ * Fixed minor leak
  * Documentation fixes
+
+Miscellaneous:
+ * Updated translations
+
+
+Older releases:
+---------------
 
 Major changes in 0.17 are:
  * Respect $HOME in favour of getpwuid()
