@@ -32,8 +32,8 @@ else
 	rsync  -Lrtvz  rsync://translationproject.org/tp/latest/$PROJECT/ po
 fi
 
-PO_NEW=$(git ls-files -o | gawk '/po\/[[:alpha:]_\-]*\.po/ { sub("po/", ""); print $0; }' | sort)
-PO_MOD=$(git ls-files -m | gawk '/po\/[[:alpha:]_\-]*\.po/ { sub("po/", ""); print $0; }' | sort)
+PO_NEW=$(git ls-files -o | gawk '/po\/[[:alpha:]_\-]*\.po$/ { sub("po/", ""); print $0; }' | sort)
+PO_MOD=$(git ls-files -m | gawk '/po\/[[:alpha:]_\-]*\.po$/ { sub("po/", ""); print $0; }' | sort)
 
 function add_to_linguas {
 	local LANG="$1"
