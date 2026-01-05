@@ -120,8 +120,13 @@ else
   systemd_user_unit_dir = get_option('prefix') / 'lib' / 'systemd' / 'user'
 endif
 
-install_data('xdg-user-dirs.service',
-  install_dir: systemd_user_unit_dir
+configure_file(
+  input: 'xdg-user-dirs.service.in',
+  output: '@BASENAME@',
+  configuration: {
+    'bindir': get_option('prefix') / get_option('bindir'),
+  },
+  install_dir: systemd_user_unit_dir,
 )
 
 #
