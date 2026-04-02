@@ -48,19 +48,31 @@ concat_strings (const char *first, ...)
   char *res;
   const char *next;
   va_list va;
-  int len;
+  size_t len;
 
   res = strdup (first);
+  if (res == NULL)
+    return NULL;
   len = strlen (res) + 1;
 
   va_start (va, first);
   while ( (next = va_arg(va, const char *)) != NULL)
     {
-      res = realloc (res, len + strlen (next) + 1);
-      strcat (res, next);
-    }
+  	  char *new_res;
+      size_t next_len = strlen (next);
 
-  va_end(va);
+      new_res = realloc (res, len + next_len);
+      if (new_res == NULL)
+        {
+          free (res);
+          va_end (va);
+          return NULL;
+        }
+      res = new_res;
+      strcat (res, next);
+      len += next_len;
+    }
+  va_end (va);
 
   return res;
 }
