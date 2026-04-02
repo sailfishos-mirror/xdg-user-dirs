@@ -82,56 +82,10 @@ add_project_arguments([
 ], language : 'c')
 
 #
-# Executables
-#
-xdg_user_dirs_update = executable('xdg-user-dirs-update',
-  'xdg-user-dirs-update.c',
-  include_directories: config_inc,
-  dependencies: [libintl_dep],
-  install: true
-)
-
-xdg_user_dir = executable('xdg-user-dir',
-  [
-    'xdg-user-dir-lookup.h',
-    'xdg-user-dir-lookup.c',
-    'xdg-user-dir.c',
-  ],
-  include_directories: config_inc,
-  install: true
-)
-
-#
-# Data
-#
-xdg_config_dir = get_option('sysconfdir') / 'xdg'
-install_data(['user-dirs.conf', 'user-dirs.defaults'],
-  install_dir: xdg_config_dir
-)
-
-xdg_autostart_dir = xdg_config_dir / 'autostart'
-install_data('xdg-user-dirs.desktop',
-  install_dir: xdg_autostart_dir
-)
-
-if systemd_dep.found()
-  systemd_user_unit_dir = systemd_dep.get_variable(pkgconfig: 'systemduserunitdir')
-else
-  systemd_user_unit_dir = get_option('prefix') / 'lib' / 'systemd' / 'user'
-endif
-
-configure_file(
-  input: 'xdg-user-dirs.service.in',
-  output: '@BASENAME@',
-  configuration: {
-    'bindir': get_option('prefix') / get_option('bindir'),
-  },
-  install_dir: systemd_user_unit_dir,
-)
-
-#
 # Subdirs
 #
+subdir('src')
+subdir('data')
 if get_option('docs')
   subdir('man')
 endif
