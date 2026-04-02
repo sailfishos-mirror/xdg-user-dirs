@@ -118,6 +118,26 @@ is_space (char c)
   return c == ' ' || c == '\t';
 }
 
+static int
+is_valid_user_dir_name (const char *name)
+{
+  unsigned char c;
+
+  if (name == NULL || *name == 0)
+    return 0;
+
+  while (*name)
+    {
+      c = (unsigned char)*name;
+  	  /* TODO: We should check for printable unicode characters here, instead of just newlines */
+      if (c == '\n' || c == '\r')
+        return 0;
+      name++;
+    }
+
+  return 1;
+}
+
 static void
 remove_trailing_whitespace (char *s)
 {
@@ -1076,6 +1096,12 @@ main (int argc, char *argv[])
 	{
 	  set_dir = argv[++i];
 	  set_value = argv[++i];
+
+    if (!is_valid_user_dir_name (set_dir))
+      {
+        fprintf (stderr, "Invalid directory name %s\n", set_dir ? set_dir : "(null)");
+        exit (1);
+      }
 
 	  if (*set_value != '/')
 	    {
