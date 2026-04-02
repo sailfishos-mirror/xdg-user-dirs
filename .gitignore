@@ -30,3 +30,5 @@ xdg-user-dir-lookup
 xdg-user-dirs-update
 
 xdg-user-dirs-*.tar*
+
+.cache

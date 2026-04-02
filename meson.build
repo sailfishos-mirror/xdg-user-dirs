@@ -98,14 +98,15 @@ xdg_user_dir_lookup = executable('xdg-user-dir-lookup',
   install: false
 )
 
+xdg_user_dir = executable('xdg-user-dir',
+  'xdg-user-dir.c',
+  include_directories: config_inc,
+  install: true
+)
+
 #
 # Data
 #
-install_data('xdg-user-dir',
-  install_dir: get_option('bindir'),
-  install_mode: 'rwxr-xr-x'
-)
-
 xdg_config_dir = get_option('sysconfdir') / 'xdg'
 install_data(['user-dirs.conf', 'user-dirs.defaults'],
   install_dir: xdg_config_dir
