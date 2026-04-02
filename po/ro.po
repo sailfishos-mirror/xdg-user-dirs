@@ -1,22 +1,40 @@
-# Romanian translation for xdg-user-dirs
-# Copyright © 2007, 2009, 2023 Free Software Foundation, Inc.
+# Romanian translation for xdg-user-dirs.
+# Copyright © 2007, 2009, 2023, 2025 Free Software Foundation, Inc.
 # This file is distributed under the same license as the xdg-user-dirs package.
 #
 # Adi Roiban <adi@roiban.ro>, 2009.
-# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023, 2025.
+# Antonio Marin <gnmer.6qxyg@slmail.me>, 2025.
 #
 #
 # Cronologia traducerii fișierului „xdg-user-dirs”:
 # Traducerea inițială, făcută de LAG, pentru versiunea xdg-user-dirs 0.11-pre1.
 # Actualizare a traducerii pentru versiunea 0.17, făcută de R-GC, mai-2023.
+# Actualizare a traducerii pentru versiunea 0.17, făcută de Antonio Marin, octombrie-2025.
+# Anulare a revizuirii traducerii făcute de către Antonio Marin a versiunii 0.17, efectuată de R-GC, dec-2025.
 # Actualizare a traducerii pentru versiunea Y, făcută de X, Z(luna-anul).
+#
+# *************************************************************************
+# *                                                                       *
+# *  Datorită repercursiunilor asupra altor piese software a traducerii   *
+# *  mesajelor acestui pachet, se recomandă ca actualizările/revizuirile  *
+# *  ulterioare versiunii 0.17 a acestui pachet, să fie prezentate        *
+# *  ÎN PREALABIL, comunității de traducători pentru validare; adică să   *
+# *  fie prezentate (cel puțin) pe următoarele liste de discuții:         *
+# *  <https://groups.google.com/g/diacritice> - Grupul Diacritice -,      *
+# *  <translation-team-ro@lists.sourceforge.net> - Echipa din TP, ș.a.,   *
+# *  <debian-l10n-romanian@lists.debian.org> - Echipa din Debian.         *
+# *                                                                       *
+# *                                       Vă mulțumesc!, R-GC 04.12.2025  *
+# *                                                                       *
+# *************************************************************************
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xdg-user-dirs 0.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-14 10:09+0100\n"
-"PO-Revision-Date: 2023-05-22 20:03+0200\n"
+"PO-Revision-Date: 2025-12-04 19:04+0100\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -24,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.6\n"
 
 #: translate.c:2
 msgid "Applications"
