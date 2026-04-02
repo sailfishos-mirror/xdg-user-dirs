@@ -25,6 +25,8 @@
   SOFTWARE.
 */
 
+#include "xdg-user-dir-lookup.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -45,7 +47,7 @@
  * free(). The return value is never NULL if @fallback != NULL, unless
  * out of memory.
  **/
-static char *
+char *
 xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
 {
   FILE *file;
@@ -188,7 +190,7 @@ error2:
  * The return value is newly allocated and must be freed with
  * free().
  **/
-static char *
+char *
 xdg_user_dir_lookup (const char *type)
 {
   char *dir, *home_dir, *user_dir;
@@ -216,18 +218,3 @@ xdg_user_dir_lookup (const char *type)
 
   return strdup (home_dir);
 }
-
-#ifdef STANDALONE_XDG_USER_DIR_LOOKUP
-int
-main (int argc, char *argv[])
-{
-  if (argc != 2)
-    {
-      fprintf (stderr, "Usage %s <dir-type>\n", argv[0]);
-      exit (1);
-    }
-
-  printf ("%s\n", xdg_user_dir_lookup (argv[1]));
-  return 0;
-}
-#endif

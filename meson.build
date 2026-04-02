@@ -91,15 +91,12 @@ xdg_user_dirs_update = executable('xdg-user-dirs-update',
   install: true
 )
 
-xdg_user_dir_lookup = executable('xdg-user-dir-lookup',
-  'xdg-user-dir-lookup.c',
-  include_directories: config_inc,
-  c_args: ['-DSTANDALONE_XDG_USER_DIR_LOOKUP'],
-  install: false
-)
-
 xdg_user_dir = executable('xdg-user-dir',
-  'xdg-user-dir.c',
+  [
+    'xdg-user-dir-lookup.h',
+    'xdg-user-dir-lookup.c',
+    'xdg-user-dir.c',
+  ],
   include_directories: config_inc,
   install: true
 )

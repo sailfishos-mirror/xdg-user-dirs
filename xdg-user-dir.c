@@ -1,7 +1,11 @@
-#include "xdg-user-dir-lookup.c"
+#include <config.h>
+
+#define _GNU_SOURCE
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "xdg-user-dir-lookup.h"
 
 int
 main (int argc, char *argv[])
