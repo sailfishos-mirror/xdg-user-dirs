@@ -13,6 +13,8 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <errno.h>
+#include <wchar.h>
+#include <wctype.h>
 #include <iconv.h>
 #include <langinfo.h>
 
@@ -121,18 +123,29 @@ is_space (char c)
 static int
 is_valid_user_dir_name (const char *name)
 {
-  unsigned char c;
+  mbstate_t state;
+  const char *p;
 
   if (name == NULL || *name == 0)
     return 0;
 
-  while (*name)
+  memset (&state, 0, sizeof (state));
+  p = name;
+
+  while (*p)
     {
-      c = (unsigned char)*name;
-            /* TODO: We should check for printable unicode characters here, instead of just newlines */
-      if (c == '\n' || c == '\r')
+      wchar_t wc;
+      size_t consumed;
+
+      consumed = mbrtowc (&wc, p, MB_CUR_MAX, &state);
+      if (consumed == (size_t)-1 || consumed == (size_t)-2 || consumed == 0)
         return 0;
-      name++;
+
+      /* We reject everything that isn't a printable char or is a newline */
+      if (wc == L'\n' || wc == L'\r' || !iswprint (wc))
+        return 0;
+
+      p += consumed;
     }
 
   return 1;
@@ -1097,11 +1110,11 @@ main (int argc, char *argv[])
           set_dir = argv[++i];
           set_value = argv[++i];
 
-    if (!is_valid_user_dir_name (set_dir))
-      {
-        fprintf (stderr, "Invalid directory name %s\n", set_dir ? set_dir : "(null)");
-        exit (1);
-      }
+          if (!is_valid_user_dir_name (set_dir))
+            {
+              fprintf (stderr, "Invalid directory name %s\n", set_dir ? set_dir : "(null)");
+              exit (1);
+            }
 
           if (*set_value != '/')
             {
