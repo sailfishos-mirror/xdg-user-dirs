@@ -227,6 +227,7 @@ shell_escape (char *unescaped)
   while (*unescaped)
     {
       if (*unescaped == '$' ||
+          *unescaped == '"' ||
 	  *unescaped == '`' ||
 	  *unescaped == '\\')
 	*d++ = '\\';
