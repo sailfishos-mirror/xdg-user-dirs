@@ -1,3 +1,2 @@
 # List of source files which contain translatable strings.
-translate.c
-
+src/translate.c

@@ -9,5 +9,7 @@ i18n.gettext(meson.project_name(),
         '--from-code=UTF-8',
         '-i', '-F', '-c', '--no-wrap',
         '--package-name=' + gettext_domain,
+        '--copyright-holder=Freedesktop.org',
+        '--msgid-bugs-address=xdg@lists.freedesktop.org',
     ]
 )
