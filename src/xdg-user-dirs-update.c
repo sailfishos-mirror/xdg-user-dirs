@@ -44,7 +44,9 @@ static char *dummy_file = NULL;
 
 static iconv_t filename_converter = (iconv_t)(-1);
 
-static char *
+char *concat_strings (const char *first, ...) __attribute__((__sentinel__));
+
+char *
 concat_strings (const char *first, ...)
 {
   char *res;
