@@ -94,71 +94,71 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
       /* Remove newline at end */
       len = strlen (buffer);
       if (len > 0 && buffer[len-1] == '\n')
-	buffer[len-1] = 0;
+        buffer[len-1] = 0;
 
       p = buffer;
       while (*p == ' ' || *p == '\t')
-	p++;
+        p++;
 
       if (strncmp (p, "XDG_", 4) != 0)
-	continue;
+        continue;
       p += 4;
       if (strncmp (p, type, strlen (type)) != 0)
-	continue;
+        continue;
       p += strlen (type);
       if (strncmp (p, "_DIR", 4) != 0)
-	continue;
+        continue;
       p += 4;
 
       while (*p == ' ' || *p == '\t')
-	p++;
+        p++;
 
       if (*p != '=')
-	continue;
+        continue;
       p++;
 
       while (*p == ' ' || *p == '\t')
-	p++;
+        p++;
 
       if (*p != '"')
-	continue;
+        continue;
       p++;
 
       relative = 0;
       if (strncmp (p, "$HOME/", 6) == 0)
-	{
-	  p += 6;
-	  relative = 1;
-	}
+        {
+          p += 6;
+          relative = 1;
+        }
       else if (*p != '/')
-	continue;
+        continue;
 
       free (user_dir);
       if (relative)
-	{
-	  user_dir = (char*) malloc (strlen (home_dir) + 1 + strlen (p) + 1);
+        {
+          user_dir = (char*) malloc (strlen (home_dir) + 1 + strlen (p) + 1);
           if (user_dir == NULL)
             goto error2;
 
-	  strcpy (user_dir, home_dir);
-	  strcat (user_dir, "/");
-	}
+          strcpy (user_dir, home_dir);
+          strcat (user_dir, "/");
+        }
       else
-	{
-	  user_dir = (char*) malloc (strlen (p) + 1);
+        {
+          user_dir = (char*) malloc (strlen (p) + 1);
           if (user_dir == NULL)
             goto error2;
 
-	  *user_dir = 0;
-	}
+          *user_dir = 0;
+        }
 
       d = user_dir + strlen (user_dir);
       while (*p && *p != '"')
-	{
-	  if ((*p == '\\') && (*(p+1) != 0))
-	    p++;
-	  *d++ = *p++;
-	}
+        {
+          if ((*p == '\\') && (*(p+1) != 0))
+            p++;
+          *d++ = *p++;
+        }
       *d = 0;
     }
 error2:

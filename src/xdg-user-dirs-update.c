@@ -62,7 +62,7 @@ concat_strings (const char *first, ...)
   va_start (va, first);
   while ( (next = va_arg(va, const char *)) != NULL)
     {
-            char *new_res;
+      char *new_res;
       size_t next_len = strlen (next);
 
       new_res = realloc (res, len + next_len);
