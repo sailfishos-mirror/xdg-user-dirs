@@ -1,3 +1,24 @@
+Version 0.20
+------------
+Released: 2026-04-08
+
+Features:
+ * user-dirs.defaults: add PROJECTS directory
+ * Replace xdg-user-dir shell script with C implementation
+ * Make printable-char validation for dir names stricter
+
+Bugfixes:
+ * build: Unhardcode bindir in .service file
+ * Fix length accounting in concat_strings
+ * Escape " as well when shell-escaping
+ * Check that user dir name does not contain line breaks
+ * git-tp-sync: prevent handling POT files
+
+Miscellaneous:
+ * Remove Automake support
+ * Clean up user-dir lookup code a bit, split sources and data
+ * Stop mixing tabs & spaces
+
 Version 0.19
 ------------
 Released: 2025-09-20
