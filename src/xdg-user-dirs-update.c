@@ -846,7 +846,7 @@ save_user_dirs (void)
   fprintf (file, "# Format is XDG_xxx_DIR=\"$HOME/yyy\", where yyy is a shell-escaped\n");
   fprintf (file, "# homedir-relative path, or XDG_xxx_DIR=\"/yyy\", where /yyy is an\n");
   fprintf (file, "# absolute path. No other format is supported.\n");
-  fprintf (file, "# \n");
+  fprintf (file, "#\n");
 
   if (user_dirs)
     {
