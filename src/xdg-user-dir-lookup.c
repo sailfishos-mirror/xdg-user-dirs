@@ -66,7 +66,7 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
   config_home = getenv ("XDG_CONFIG_HOME");
   if (config_home == NULL || config_home[0] == 0)
     {
-      config_file = (char*) malloc (strlen (home_dir) + strlen ("/.config/user-dirs.dirs") + 1);
+      config_file = (char *)malloc (strlen (home_dir) + strlen ("/.config/user-dirs.dirs") + 1);
       if (config_file == NULL)
         goto error;
 
@@ -75,7 +75,7 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
     }
   else
     {
-      config_file = (char*) malloc (strlen (config_home) + strlen ("/user-dirs.dirs") + 1);
+      config_file = (char *)malloc (strlen (config_home) + strlen ("/user-dirs.dirs") + 1);
       if (config_file == NULL)
         goto error;
 
@@ -93,8 +93,8 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
     {
       /* Remove newline at end */
       len = strlen (buffer);
-      if (len > 0 && buffer[len-1] == '\n')
-        buffer[len-1] = 0;
+      if (len > 0 && buffer[len - 1] == '\n')
+        buffer[len - 1] = 0;
 
       p = buffer;
       while (*p == ' ' || *p == '\t')
@@ -136,7 +136,7 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
       free (user_dir);
       if (relative)
         {
-          user_dir = (char*) malloc (strlen (home_dir) + 1 + strlen (p) + 1);
+          user_dir = (char *)malloc (strlen (home_dir) + 1 + strlen (p) + 1);
           if (user_dir == NULL)
             goto error2;
 
@@ -145,7 +145,7 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
         }
       else
         {
-          user_dir = (char*) malloc (strlen (p) + 1);
+          user_dir = (char *)malloc (strlen (p) + 1);
           if (user_dir == NULL)
             goto error2;
 
@@ -155,7 +155,7 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
       d = user_dir + strlen (user_dir);
       while (*p && *p != '"')
         {
-          if ((*p == '\\') && (*(p+1) != 0))
+          if ((*p == '\\') && (*(p + 1) != 0))
             p++;
           *d++ = *p++;
         }
@@ -167,7 +167,7 @@ error2:
   if (user_dir)
     return user_dir;
 
- error:
+error:
   if (fallback)
     return strdup (fallback);
   return NULL;
@@ -207,7 +207,7 @@ xdg_user_dir_lookup (const char *type)
   /* Special case desktop for historical compatibility */
   if (strcmp (type, "DESKTOP") == 0)
     {
-      user_dir = (char*) malloc (strlen (home_dir) + strlen ("/Desktop") + 1);
+      user_dir = (char *)malloc (strlen (home_dir) + strlen ("/Desktop") + 1);
       if (user_dir == NULL)
         return NULL;
 
