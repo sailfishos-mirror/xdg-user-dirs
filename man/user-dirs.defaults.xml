@@ -40,12 +40,13 @@ are used by the xdg-user-dirs-update command.</para>
 <para>The following names are recognised:
 <simplelist>
     <member>DESKTOP</member>
-    <member>DOWNLOAD</member>
-    <member>TEMPLATES</member>
-    <member>PUBLICSHARE</member>
     <member>DOCUMENTS</member>
+    <member>DOWNLOAD</member>
     <member>MUSIC</member>
     <member>PICTURES</member>
+    <member>PROJECTS</member>
+    <member>PUBLICSHARE</member>
+    <member>TEMPLATES</member>
     <member>VIDEOS</member>
 </simplelist></para>
 <para>The values are relative pathnames from the home directory and

@@ -41,12 +41,13 @@ of the special XDG user dirs.</para>
 The possible names are:
 <simplelist>
     <member>DESKTOP</member>
-    <member>DOWNLOAD</member>
-    <member>TEMPLATES</member>
-    <member>PUBLICSHARE</member>
     <member>DOCUMENTS</member>
+    <member>DOWNLOAD</member>
     <member>MUSIC</member>
     <member>PICTURES</member>
+    <member>PROJECTS</member>
+    <member>PUBLICSHARE</member>
+    <member>TEMPLATES</member>
     <member>VIDEOS</member>
 </simplelist></para>
 </refsect1>

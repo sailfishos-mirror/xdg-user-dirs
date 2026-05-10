@@ -86,12 +86,13 @@ locale.</para>
     <para><replaceable>NAME</replaceable> should be one of the following:
       <simplelist>
         <member>DESKTOP</member>
-        <member>DOWNLOAD</member>
-        <member>TEMPLATES</member>
-        <member>PUBLICSHARE</member>
         <member>DOCUMENTS</member>
+        <member>DOWNLOAD</member>
         <member>MUSIC</member>
         <member>PICTURES</member>
+        <member>PROJECTS</member>
+        <member>PUBLICSHARE</member>
+        <member>TEMPLATES</member>
         <member>VIDEOS</member>
       </simplelist></para>
    <para><replaceable>PATH</replaceable> must be an absolute path,
