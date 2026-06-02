@@ -112,6 +112,19 @@ locale.</para>
   where the <filename>user-dirs.dirs</filename> file is located.</para>
 </refsect1>
 
+<refsect1><title>Exit Status</title>
+  <para>On success 0 is returned, a non-zero failure code otherwise.</para>
+</refsect1>
+
+<refsect1><title>Examples</title>
+<para>Update user dirs to the current locale:</para>
+<screen>xdg-user-dirs-update</screen>
+<para>Set the Downloads directory explicitly:</para>
+<screen>xdg-user-dirs-update --set DOWNLOAD /home/user/Downloads</screen>
+<para>Force a full reset of all user dirs:</para>
+<screen>xdg-user-dirs-update --force</screen>
+</refsect1>
+
 <refsect1><title>See Also</title>
   <para>
     <citerefentry><refentrytitle>xdg-user-dir</refentrytitle><manvolnum>1</manvolnum></citerefentry>,

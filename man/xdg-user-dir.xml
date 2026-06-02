@@ -30,7 +30,7 @@
 
 <refsynopsisdiv>
 <cmdsynopsis>
-<command>xdg-user-dir</command> <arg>NAME</arg>
+<command>xdg-user-dir</command> <arg choice="plain">NAME</arg>
 </cmdsynopsis>
 </refsynopsisdiv>
 
@@ -62,9 +62,21 @@ The possible names are:
   where the <filename>user-dirs.dirs</filename> file is located.</para>
 </refsect1>
 
+<refsect1><title>Exit Status</title>
+  <para>On success 0 is returned, a non-zero failure code otherwise.</para>
+</refsect1>
+
+<refsect1><title>Examples</title>
+<para>Print the path of the current user's Downloads directory:</para>
+<screen>xdg-user-dir DOWNLOAD</screen>
+<para>Use in a shell script:</para>
+<screen>cd "$(xdg-user-dir DOCUMENTS)"</screen>
+</refsect1>
+
 <refsect1><title>See Also</title>
   <para>
-    <citerefentry><refentrytitle>xdg-user-dirs-update</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+    <citerefentry><refentrytitle>xdg-user-dirs-update</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+    <citerefentry><refentrytitle>user-dirs.dirs</refentrytitle><manvolnum>5</manvolnum></citerefentry>
   </para>
 </refsect1>
 
