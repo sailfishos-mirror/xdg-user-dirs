@@ -160,6 +160,14 @@ xdg_user_dir_lookup_with_fallback (const char *type, const char *fallback)
           *d++ = *p++;
         }
       *d = 0;
+
+      /* Skip entries with unterminated quotes */
+      if (*p != '"')
+        {
+          free (user_dir);
+          user_dir = NULL;
+          continue;
+        }
     }
 error2:
   fclose (file);
