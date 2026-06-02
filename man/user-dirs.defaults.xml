@@ -50,7 +50,7 @@ are used by the xdg-user-dirs-update command.</para>
     <member>VIDEOS</member>
 </simplelist></para>
 <para>The values are relative pathnames from the home directory and
-will be translated on a per-path-element basis into the users locale.</para>
+will be translated on a per-path-element basis into the user's locale.</para>
 <para>Lines beginning with a # character are ignored.</para>
 </refsect1>
 
