@@ -45,6 +45,42 @@ static char *dummy_file = NULL;
 
 static iconv_t filename_converter = (iconv_t)(-1);
 
+static void *
+xmalloc (size_t size)
+{
+  void *p = malloc (size);
+  if (p == NULL)
+    {
+      fprintf (stderr, "xdg-user-dirs-update: out of memory\n");
+      exit (1);
+    }
+  return p;
+}
+
+static void *
+xrealloc (void *ptr, size_t size)
+{
+  void *p = realloc (ptr, size);
+  if (p == NULL)
+    {
+      fprintf (stderr, "xdg-user-dirs-update: out of memory\n");
+      exit (1);
+    }
+  return p;
+}
+
+static char *
+xstrdup (const char *s)
+{
+  char *p = strdup (s);
+  if (p == NULL)
+    {
+      fprintf (stderr, "xdg-user-dirs-update: out of memory\n");
+      exit (1);
+    }
+  return p;
+}
+
 char *concat_strings (const char *first, ...) __attribute__((__sentinel__));
 
 char *
@@ -87,7 +123,7 @@ strdup_end (const char *start, const char *end)
 {
   char *res;
 
-  res = malloc (end - start + 1);
+  res = xmalloc (end - start + 1);
   memcpy (res, start, end - start);
   res[end - start] = 0;
   return res;
@@ -234,7 +270,7 @@ shell_unescape (char *escaped)
   char *unescaped;
   char *d;
 
-  unescaped = malloc (strlen (escaped) + 1);
+  unescaped = xmalloc (strlen (escaped) + 1);
 
   d = unescaped;
 
@@ -254,7 +290,7 @@ shell_escape (char *unescaped)
   char *escaped;
   char *d;
 
-  escaped = malloc (strlen (unescaped) * 2 + 1);
+  escaped = xmalloc (strlen (unescaped) * 2 + 1);
 
   d = escaped;
 
@@ -386,7 +422,7 @@ parse_colon_separated_dirs (const char *dirs)
   const char *p;
 
   numfiles = 0;
-  paths = malloc (sizeof (char *));
+  paths = xmalloc (sizeof (char *));
   paths[0] = NULL;
 
   p = dirs;
@@ -409,7 +445,7 @@ parse_colon_separated_dirs (const char *dirs)
           p = NULL;
         }
 
-      paths = realloc (paths, sizeof (char *) * (numfiles + 2));
+      paths = xrealloc (paths, sizeof (char *) * (numfiles + 2));
       paths[numfiles++] = strndup (path, len);
       paths[numfiles] = NULL;
     }
@@ -427,7 +463,7 @@ get_config_files (char *filename)
   char **paths, **config_paths;
 
   numfiles = 0;
-  paths = malloc (sizeof (char *));
+  paths = xmalloc (sizeof (char *));
   paths[0] = NULL;
 
   file = get_user_config_file (filename);
@@ -435,7 +471,7 @@ get_config_files (char *filename)
     {
       if (is_regular_file (file))
         {
-          paths = realloc (paths, sizeof (char *) * (numfiles + 2));
+          paths = xrealloc (paths, sizeof (char *) * (numfiles + 2));
           paths[numfiles++] = file;
           paths[numfiles] = NULL;
         }
@@ -454,7 +490,7 @@ get_config_files (char *filename)
       file = concat_strings (config_paths[i], "/", filename, NULL);
       if (is_regular_file (file))
         {
-          paths = realloc (paths, sizeof (char *) * (numfiles + 2));
+          paths = xrealloc (paths, sizeof (char *) * (numfiles + 2));
           paths[numfiles++] = file;
           paths[numfiles] = NULL;
         }
@@ -476,7 +512,7 @@ add_directory (Directory *dirs, Directory *dir)
 
   if (dirs == NULL)
     {
-      new_dirs = malloc (sizeof (Directory) * 2);
+      new_dirs = xmalloc (sizeof (Directory) * 2);
       new_dirs[0] = *dir;
       new_dirs[1].name = NULL;
     }
@@ -484,7 +520,7 @@ add_directory (Directory *dirs, Directory *dir)
     {
       for (i = 0; dirs[i].name != NULL; i++)
         ;
-      new_dirs = realloc (dirs, (i + 2) * sizeof (Directory));
+      new_dirs = xrealloc (dirs, (i + 2) * sizeof (Directory));
       new_dirs[i] = *dir;
       new_dirs[i + 1].name = NULL;
     }
@@ -506,18 +542,18 @@ static void
 load_config (char *path)
 {
   FILE *file;
-  char buffer[512];
+  char *buffer = NULL;
+  size_t buffer_size = 0;
   char *p;
-  int len;
+  ssize_t len;
 
   file = fopen (path, "r");
   if (file == NULL)
     return;
 
-  while (fgets (buffer, sizeof (buffer), file))
+  while ((len = getline (&buffer, &buffer_size, file)) != -1)
     {
       /* Remove newline at end */
-      len = strlen (buffer);
       if (len > 0 && buffer[len - 1] == '\n')
         buffer[len - 1] = 0;
 
@@ -551,12 +587,13 @@ load_config (char *path)
           if (strcmp (p, "UTF8") == 0 || strcmp (p, "UTF-8") == 0)
             filename_encoding = NULL;
           else if (strcmp (p, "LOCALE") == 0)
-            filename_encoding = strdup (nl_langinfo (CODESET));
+            filename_encoding = xstrdup (nl_langinfo (CODESET));
           else
-            filename_encoding = strdup (p);
+            filename_encoding = xstrdup (p);
         }
     }
 
+  free (buffer);
   fclose (file);
 }
 
@@ -582,10 +619,11 @@ static void
 load_default_dirs (void)
 {
   FILE *file;
-  char buffer[512];
+  char *buffer = NULL;
+  size_t buffer_size = 0;
   char *p;
   char *key, *key_end, *value;
-  int len;
+  ssize_t len;
   Directory dir;
   char **paths;
 
@@ -603,10 +641,9 @@ load_default_dirs (void)
       exit (1);
     }
 
-  while (fgets (buffer, sizeof (buffer), file))
+  while ((len = getline (&buffer, &buffer_size, file)) != -1)
     {
       /* Remove newline at end */
-      len = strlen (buffer);
       if (len > 0 && buffer[len - 1] == '\n')
         buffer[len - 1] = 0;
 
@@ -638,11 +675,12 @@ load_default_dirs (void)
       if (*key == 0 || *value == 0)
         continue;
 
-      dir.name = strdup (key);
-      dir.path = strdup (value);
+      dir.name = xstrdup (key);
+      dir.path = xstrdup (value);
       default_dirs = add_directory (default_dirs, &dir);
     }
 
+  free (buffer);
   fclose (file);
   freev (paths);
 }
@@ -651,10 +689,11 @@ static void
 load_user_dirs (void)
 {
   FILE *file;
-  char buffer[512];
+  char *buffer = NULL;
+  size_t buffer_size = 0;
   char *p;
   char *key, *key_end, *value, *value_end;
-  int len;
+  ssize_t len;
   Directory dir;
   char *user_config_file;
 
@@ -666,10 +705,9 @@ load_user_dirs (void)
   if (file == NULL)
     return;
 
-  while (fgets (buffer, sizeof (buffer), file))
+  while ((len = getline (&buffer, &buffer_size, file)) != -1)
     {
       /* Remove newline at end */
-      len = strlen (buffer);
       if (len > 0 && buffer[len - 1] == '\n')
         buffer[len - 1] = 0;
 
@@ -727,6 +765,11 @@ load_user_dirs (void)
 
           p++;
         }
+
+      /* Skip lines with unterminated quotes */
+      if (*p != '"')
+        continue;
+
       value_end = p;
 
       *key_end = 0;
@@ -735,11 +778,12 @@ load_user_dirs (void)
       if (*key == 0)
         continue;
 
-      dir.name = strdup (key);
+      dir.name = xstrdup (key);
       dir.path = shell_unescape (value);
       user_dirs = add_directory (user_dirs, &dir);
     }
 
+  free (buffer);
   fclose (file);
 }
 
@@ -760,7 +804,10 @@ save_locale (void)
       return;
     }
 
-  locale = strdup (setlocale (LC_MESSAGES, NULL));
+  {
+    const char *cur_locale = setlocale (LC_MESSAGES, NULL);
+    locale = cur_locale ? xstrdup (cur_locale) : xstrdup ("C");
+  }
   /* Skip encoding part */
   dot = strchr (locale, '.');
   if (dot)
@@ -787,11 +834,11 @@ save_user_dirs (void)
 
   tmp_file = NULL;
   if (dummy_file)
-    user_config_file = strdup (dummy_file);
+    user_config_file = xstrdup (dummy_file);
   else
     user_config_file = get_user_config_file ("user-dirs.dirs");
 
-  dir = strdup (user_config_file);
+  dir = xstrdup (user_config_file);
   slash = strrchr (dir, '/');
   if (slash)
     *slash = 0;
@@ -808,7 +855,7 @@ save_user_dirs (void)
     }
   free (dir);
 
-  tmp_file = malloc (strlen (user_config_file) + 6 + 1);
+  tmp_file = xmalloc (strlen (user_config_file) + 6 + 1);
   strcpy (tmp_file, user_config_file);
   strcat (tmp_file, "XXXXXX");
 
@@ -848,12 +895,18 @@ save_user_dirs (void)
         }
     }
 
-  fclose (file);
+  if (fclose (file) != 0)
+    {
+      unlink (tmp_file);
+      fprintf (stderr, "Can't save user-dirs.dirs: %s\n", strerror (errno));
+      res = 0;
+      goto out;
+    }
 
   if (rename (tmp_file, user_config_file) == -1)
     {
       unlink (tmp_file);
-      fprintf (stderr, "Can't save user-dirs.dirs\n");
+      fprintf (stderr, "Can't save user-dirs.dirs: %s\n", strerror (errno));
       res = 0;
     }
 
@@ -892,7 +945,7 @@ localize_path_name (const char *path)
       element_copy = strdup_end (element, element_end);
       translated = gettext (element_copy);
 
-      res = realloc (res, strlen (res) + 1 + strlen (translated) + 1);
+      res = xrealloc (res, strlen (res) + 1 + strlen (translated) + 1);
       if (has_slash)
         strcat (res, "/");
       strcat (res, translated);
@@ -1140,25 +1193,28 @@ main (int argc, char *argv[])
       home = get_home_dir ();
 
       path = set_value;
-      if (has_prefix (path, home))
-        {
-          path += strlen (home);
-          while (*path == '/')
-            path++;
-        }
+      {
+        int home_len = strlen (home);
+        if (has_prefix (path, home) && (path[home_len] == '/' || path[home_len] == '\0'))
+          {
+            path += home_len;
+            while (*path == '/')
+              path++;
+          }
+      }
 
       dir = find_dir (user_dirs, set_dir);
       if (dir != NULL)
         {
           free (dir->path);
-          dir->path = strdup (path);
+          dir->path = xstrdup (path);
         }
       else
         {
           Directory new_dir;
 
-          new_dir.name = strdup (set_dir);
-          new_dir.path = strdup (path);
+          new_dir.name = xstrdup (set_dir);
+          new_dir.path = xstrdup (path);
 
           user_dirs = add_directory (user_dirs, &new_dir);
         }
