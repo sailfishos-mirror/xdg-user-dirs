@@ -53,8 +53,8 @@ else
 endif
 
 # Set install directories
-conf_data.set_quoted('XDGCONFDIR', get_option('sysconfdir') / 'xdg')
-conf_data.set_quoted('LOCALEDIR', get_option('localedir'))
+conf_data.set_quoted('XDGCONFDIR', get_option('prefix') / get_option('sysconfdir') / 'xdg')
+conf_data.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
 
 # Generate config.h
 configure_file(
